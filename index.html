@@ -816,12 +816,20 @@ function setLang(lang) {
   });
   document.getElementById('lang-de').classList.toggle('on', lang === 'de');
   document.getElementById('lang-en').classList.toggle('on', lang === 'en');
+}
+function chooseLang(lang) {
+  setLang(lang);
   try { localStorage.setItem('cowcare-lang', lang); } catch (e) {}
 }
-document.getElementById('lang-de').addEventListener('click', () => setLang('de'));
-document.getElementById('lang-en').addEventListener('click', () => setLang('en'));
-let initial = 'de';
+document.getElementById('lang-de').addEventListener('click', () => chooseLang('de'));
+document.getElementById('lang-en').addEventListener('click', () => chooseLang('en'));
+let initial = null;
 try { const s = localStorage.getItem('cowcare-lang'); if (s === 'de' || s === 'en') initial = s; } catch (e) {}
+if (!initial) {
+  // Keine gespeicherte Wahl: Browser-Sprache entscheidet — Deutsch nur bei deutschen Browsern
+  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+  initial = langs.some(l => (l || '').toLowerCase().startsWith('de')) ? 'de' : 'en';
+}
 setLang(initial);
 
 /* ===== FAQ accordion ===== */
