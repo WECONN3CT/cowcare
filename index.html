@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CowCare — KI, die jede Kuh sieht, jede Minute</title>
-<meta name="description" content="CowCare ist ein kamerabasiertes KI-System für Milchviehbetriebe. Es überwacht jede Kuh 24/7 — ohne Sensoren am Tier — und warnt bis zu 48 Stunden vor Krankheitsausbruch.">
+<title>CowCare — Die KI, die jede Kuh im Blick hat</title>
+<meta name="description" content="CowCare macht aus Stallkameras ein KI-Frühwarnsystem für Milchviehbetriebe — ohne Sensoren am Tier. Jetzt bewerben: 5 Pilotbetriebe in UK & Deutschland gesucht.">
 <link rel="icon" type="image/png" href="assets/logo.png">
-<meta property="og:title" content="CowCare — KI, die jede Kuh sieht, jede Minute">
-<meta property="og:description" content="Kamerabasierte Herdengesundheits-KI. Null Sensoren am Tier. 48h frühere Krankheitserkennung. 4–6× ROI pro Betrieb.">
+<meta property="og:title" content="CowCare — Die KI, die jede Kuh im Blick hat">
+<meta property="og:description" content="Kuh-Tracking validiert, Verhaltens-KI in Training. Wir suchen 5 Pilotbetriebe in UK & Deutschland — kostenlos, ohne Sensoren am Tier.">
 <meta property="og:image" content="assets/hero-cows.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +55,7 @@ input::placeholder,textarea::placeholder{color:var(--faint)}
 .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .section{padding:clamp(72px,10vw,130px) 0;position:relative}
 h2{font-size:clamp(30px,4.6vw,52px);font-weight:700;color:var(--deep);text-wrap:balance}
-.sub{font-size:clamp(16px,1.9vw,19px);color:var(--muted);max-width:620px;margin-top:16px;text-wrap:pretty}
+.sub{font-size:clamp(16px,1.9vw,19px);color:var(--muted);max-width:640px;margin-top:16px;text-wrap:pretty}
 
 /* reveal */
 .rv{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
@@ -75,7 +75,7 @@ nav{
 .brand img{width:38px;height:38px;object-fit:contain}
 .brand b{font-family:'Poppins',sans-serif;font-size:20px;font-weight:800;color:var(--deep);letter-spacing:-.02em}
 .brand b span{color:var(--mid)}
-.navlinks{display:flex;gap:26px;font-size:15px;font-weight:500;flex-wrap:wrap;justify-content:center}
+.navlinks{display:flex;gap:24px;font-size:15px;font-weight:500;flex-wrap:wrap;justify-content:center}
 .navlinks a{text-decoration:none;color:var(--muted);transition:color .2s}
 .navlinks a:hover{color:var(--forest)}
 .nav-right{display:flex;align-items:center;gap:12px}
@@ -99,6 +99,8 @@ nav{
 .btn-accent:hover{background:var(--accent-deep);transform:translateY(-2px)}
 .btn-glass{background:rgba(255,255,255,.1);backdrop-filter:blur(8px);color:#fff;border:1.5px solid rgba(255,255,255,.35)}
 .btn-glass:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+.btn-lime{background:var(--lime);color:var(--deeper)}
+.btn-lime:hover{background:#9ED44E;transform:translateY(-2px)}
 nav .btn{padding:11px 22px;font-size:14px}
 @media(max-width:960px){.navlinks{display:none}}
 
@@ -116,15 +118,22 @@ nav .btn{padding:11px 22px;font-size:14px}
   padding:150px clamp(20px,4vw,48px) 0;
   display:flex;flex-direction:column;justify-content:flex-end;flex:1;
 }
+.badge-win{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;
+  color:var(--deeper);background:linear-gradient(120deg,#F5D423,#F5A623);
+  border-radius:100px;padding:9px 20px;margin-bottom:18px;
+  box-shadow:0 12px 32px -10px rgba(245,166,35,.55);
+}
 .hero .eyebrow{
   color:#D8EDB4;background:rgba(140,198,63,.14);border-color:rgba(140,198,63,.4);
-  backdrop-filter:blur(8px);font-size:12.5px;padding:8px 18px;margin-bottom:26px;
+  backdrop-filter:blur(8px);font-size:12.5px;padding:8px 18px;margin-bottom:22px;margin-left:12px;
 }
-.hero h1{font-size:clamp(38px,5.6vw,72px);font-weight:800;line-height:1.06;letter-spacing:-.025em;color:#fff;text-wrap:balance}
+.hero h1{font-size:clamp(36px,5.2vw,66px);font-weight:800;line-height:1.08;letter-spacing:-.025em;color:#fff;text-wrap:balance}
 .hero h1 .grass{color:var(--lime)}
 .hero h1 .eyes{position:relative;display:inline-block;color:var(--gold)}
 .hero h1 .eyes svg{position:absolute;left:0;bottom:-8px;width:100%;height:14px}
-.hero p.lead{margin:26px 0 0;font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.88);max-width:560px;text-wrap:pretty}
+.hero p.lead{margin:26px 0 0;font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.9);max-width:620px;text-wrap:pretty}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:36px}
 .hero-ctas .btn{font-size:16px;padding:15px 30px}
 
@@ -150,7 +159,7 @@ nav .btn{padding:11px 22px;font-size:14px}
 .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--lime);animation:ccPulse 2s ease-in-out infinite}
 @media(max-width:760px){.detect{display:none}}
 
-/* alert chip */
+/* training chip */
 .chip-alert{
   position:absolute;bottom:31%;right:7%;z-index:2;
   display:flex;align-items:center;gap:11px;
@@ -158,7 +167,7 @@ nav .btn{padding:11px 22px;font-size:14px}
   border:1px solid rgba(44,95,45,.14);border-radius:18px;padding:12px 17px;
   box-shadow:0 24px 48px -18px rgba(10,26,11,.6);animation:ccFloat 6s ease-in-out infinite;
 }
-.chip-alert .dot{width:38px;height:38px;flex:none;border-radius:13px;display:grid;place-items:center;background:rgba(232,131,12,.15)}
+.chip-alert .dot{width:38px;height:38px;flex:none;border-radius:13px;display:grid;place-items:center;background:rgba(140,198,63,.18)}
 .chip-alert b{font-family:'Poppins',sans-serif;font-size:13.5px;color:var(--deep);display:block}
 .chip-alert small{color:var(--muted);font-size:12px;display:block;line-height:1.35}
 @media(max-width:760px){.chip-alert{display:none}}
@@ -170,7 +179,7 @@ nav .btn{padding:11px 22px;font-size:14px}
   border-radius:22px;overflow:hidden;margin:60px 0 90px;backdrop-filter:blur(12px);
 }
 .hero-stats>div{background:rgba(20,46,21,.5);padding:22px 26px}
-.hero-stats .num{font-family:'Poppins',sans-serif;font-size:clamp(26px,3vw,36px);font-weight:800;color:#fff;line-height:1}
+.hero-stats .num{font-family:'Poppins',sans-serif;font-size:clamp(24px,2.8vw,34px);font-weight:800;color:#fff;line-height:1.1}
 .hero-stats .num.lime{color:var(--lime)}
 .hero-stats .num.gold{color:var(--gold)}
 .hero-stats .lbl{font-size:13.5px;color:rgba(255,255,255,.75);margin-top:6px}
@@ -180,16 +189,16 @@ nav .btn{padding:11px 22px;font-size:14px}
 /* ---------- waves ---------- */
 .wave{display:block;width:100%;height:auto}
 
-/* ---------- problem ---------- */
-.problem{background:var(--deep);color:#fff;overflow:hidden}
-.problem::before{
+/* ---------- dark sections (problem / investors) ---------- */
+.darksec{background:var(--deep);color:#fff;overflow:hidden}
+.darksec::before{
   content:"";position:absolute;top:-140px;right:-140px;width:460px;height:460px;border-radius:50%;
   background:radial-gradient(closest-side,rgba(140,198,63,.22),transparent 72%);
 }
-.problem h2{color:#fff}
-.problem .eyebrow{color:var(--lime);background:rgba(140,198,63,.14);border-color:rgba(140,198,63,.35)}
-.problem .sub{color:rgba(255,255,255,.72)}
-.problem .hl{color:var(--accent)}
+.darksec h2{color:#fff}
+.darksec .eyebrow{color:var(--lime);background:rgba(140,198,63,.14);border-color:rgba(140,198,63,.35)}
+.darksec .sub{color:rgba(255,255,255,.72)}
+.darksec .hl{color:var(--accent)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:56px}
 .stat{
   background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
@@ -202,10 +211,10 @@ nav .btn{padding:11px 22px;font-size:14px}
 .stat p{margin-top:10px;font-size:16px;color:rgba(255,255,255,.86)}
 .stat small{display:block;margin-top:14px;font-size:12px;color:rgba(255,255,255,.4);font-style:italic}
 
-/* ---------- solution ---------- */
+/* ---------- solution pillars ---------- */
 .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:56px}
 .pillar{
-  background:var(--white);border-radius:26px;padding:30px 26px;
+  background:var(--white);border-radius:26px;padding:30px 26px;padding-top:56px;
   border:1px solid rgba(44,95,45,.1);
   box-shadow:0 14px 34px -22px rgba(28,64,29,.25);
   transition:transform .35s var(--ease),box-shadow .35s;
@@ -226,15 +235,104 @@ nav .btn{padding:11px 22px;font-size:14px}
 .pillar.orange::after{background:radial-gradient(closest-side,rgba(232,131,12,.22),transparent 75%)}
 .pillar h3{font-size:18px;font-weight:700;color:var(--deep);margin-bottom:8px}
 .pillar p{font-size:14.5px;color:var(--muted)}
+.ptag{
+  position:absolute;top:18px;left:26px;
+  font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:5px 12px;border-radius:100px;
+}
+.ptag.done{background:rgba(140,198,63,.18);color:var(--forest);border:1px solid rgba(140,198,63,.5)}
+.ptag.now{background:rgba(232,131,12,.14);color:var(--accent-deep);border:1px solid rgba(232,131,12,.45)}
+.ptag.beta{background:rgba(23,162,184,.12);color:#0E7A8A;border:1px solid rgba(23,162,184,.4)}
+.ptag.next{background:rgba(92,105,87,.1);color:var(--muted);border:1px solid rgba(92,105,87,.3)}
 .solution-tag{
   margin-top:52px;text-align:center;
   font-family:'Poppins',sans-serif;font-size:clamp(22px,3vw,32px);font-weight:700;color:var(--deep);text-wrap:balance;
 }
 .solution-tag .hl{color:var(--accent)}
 
-/* ---------- how ---------- */
-.how{background:var(--card);border-radius:clamp(28px,5vw,64px);position:relative;overflow:hidden;padding:clamp(44px,6vw,84px) clamp(26px,5vw,80px)}
-.how .eyebrow{background:rgba(140,198,63,.2);border-color:rgba(140,198,63,.45)}
+/* ---------- plan / roadmap ---------- */
+.plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:56px}
+.stage{
+  background:var(--white);border:1px solid rgba(44,95,45,.12);border-radius:28px;padding:32px 28px;
+  position:relative;transition:transform .35s var(--ease);
+}
+.stage:hover{transform:translateY(-6px)}
+.stage .snum{
+  width:46px;height:46px;border-radius:50%;display:grid;place-items:center;margin-bottom:18px;
+  font-family:'Poppins',sans-serif;font-weight:800;font-size:17px;
+  background:rgba(140,198,63,.16);color:var(--forest);
+}
+.stage h3{font-size:19px;color:var(--deep);margin-bottom:8px}
+.stage p{font-size:14.5px;color:var(--muted)}
+.stage .stag{
+  display:inline-block;margin-top:16px;
+  font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:6px 14px;border-radius:100px;
+}
+.stage.done .stag{background:rgba(140,198,63,.18);color:var(--forest)}
+.stage.now{
+  background:linear-gradient(165deg,#FFF9EF,#FFF);border:2px solid var(--accent);
+  box-shadow:0 24px 54px -24px rgba(232,131,12,.4);
+}
+.stage.now .snum{background:var(--accent);color:#fff}
+.stage.now .stag{background:rgba(232,131,12,.14);color:var(--accent-deep)}
+.stage.next .stag{background:rgba(92,105,87,.1);color:var(--muted)}
+.stage .arrow{
+  position:absolute;top:50%;right:-23px;transform:translateY(-50%);z-index:2;
+  width:34px;height:34px;border-radius:50%;background:var(--forest);color:#fff;
+  display:grid;place-items:center;box-shadow:0 6px 16px -4px rgba(28,64,29,.4);
+}
+@media(max-width:980px){.stage .arrow{display:none}}
+
+/* ---------- pilot programme ---------- */
+.pilot-sec{background:var(--card);border-radius:clamp(28px,5vw,64px);padding:clamp(44px,6vw,84px) clamp(26px,5vw,64px);position:relative;overflow:hidden}
+.pilot-sec .eyebrow{background:rgba(232,131,12,.12);border-color:rgba(232,131,12,.4);color:var(--accent-deep)}
+.pilot-sec .eyebrow::before{background:var(--accent)}
+.slots{
+  display:inline-flex;align-items:center;gap:9px;margin-left:10px;vertical-align:middle;
+  font-family:'Poppins',sans-serif;font-size:12.5px;font-weight:700;
+  background:var(--white);border:1.5px dashed var(--accent);border-radius:100px;
+  padding:7px 16px;color:var(--accent-deep);margin-bottom:22px;
+}
+.deal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:48px}
+.deal{
+  background:var(--white);border-radius:26px;padding:30px 28px;
+  border:1px solid rgba(44,95,45,.12);
+}
+.deal h3{font-size:17px;color:var(--deep);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.deal h3 .dico{width:38px;height:38px;flex:none;border-radius:13px;display:grid;place-items:center;background:rgba(140,198,63,.16);color:var(--forest)}
+.deal ul,.deal ol{list-style:none;display:flex;flex-direction:column;gap:11px}
+.deal li{display:flex;gap:10px;font-size:14.5px;color:var(--muted);align-items:flex-start}
+.deal li svg{flex:none;margin-top:3px}
+.deal ol li b{font-family:'Poppins',sans-serif;color:var(--deep);font-weight:600}
+.deal ol .onum{
+  flex:none;width:24px;height:24px;border-radius:50%;background:var(--forest);color:#fff;
+  display:grid;place-items:center;font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;margin-top:1px;
+}
+/* pilot form */
+.pilot-form{
+  margin-top:48px;background:var(--white);border-radius:32px;
+  border:1px solid rgba(44,95,45,.12);box-shadow:0 24px 60px -28px rgba(44,95,45,.35);
+  padding:clamp(28px,4vw,48px);max-width:760px;margin-left:auto;margin-right:auto;
+}
+.pilot-form h3{font-size:clamp(20px,2.6vw,26px);color:var(--deep);margin-bottom:6px}
+.pilot-form>p{font-size:14.5px;color:var(--muted);margin-bottom:26px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--deep);margin-bottom:7px;font-family:'Poppins',sans-serif}
+.field input,.field select,.field textarea{
+  width:100%;padding:13px 16px;border-radius:14px;font-family:'Figtree',sans-serif;font-size:15px;
+  border:1.5px solid rgba(44,95,45,.18);background:var(--cream);color:var(--ink);
+  transition:border-color .2s,box-shadow .2s;outline:none;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  border-color:var(--mid);box-shadow:0 0 0 4px rgba(140,198,63,.18);
+}
+.field textarea{resize:vertical;min-height:90px}
+.form-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.form-hint{font-size:13px;color:var(--faint);margin-top:14px;text-align:center}
+
+/* ---------- how / tech ---------- */
+.how{background:var(--white);border-radius:clamp(28px,5vw,64px);position:relative;overflow:hidden;padding:clamp(44px,6vw,84px) clamp(26px,5vw,80px);border:1px solid rgba(44,95,45,.1)}
 .how-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:clamp(36px,5vw,80px);align-items:center}
 .how-img{
   width:100%;max-width:520px;margin:0 auto;aspect-ratio:1.02;object-fit:cover;
@@ -255,13 +353,13 @@ nav .btn{padding:11px 22px;font-size:14px}
   font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;
   box-shadow:0 10px 22px -8px rgba(44,95,45,.5);
 }
-.step:nth-child(2) .n{background:var(--mid);box-shadow:0 10px 22px -8px rgba(74,139,59,.5)}
-.step:nth-child(3) .n{background:var(--accent);box-shadow:0 10px 22px -8px rgba(232,131,12,.5)}
+.step:nth-child(2) .n{background:var(--mid)}
+.step:nth-child(3) .n{background:var(--accent)}
 .step h3{font-size:19px;color:var(--deep);margin-bottom:5px}
 .step p{font-size:15px;color:var(--muted);max-width:420px}
 .zero-badge{
   display:inline-flex;align-items:center;gap:10px;margin-top:34px;
-  background:var(--white);border:1.5px dashed var(--mid);border-radius:100px;
+  background:var(--cream);border:1.5px dashed var(--mid);border-radius:100px;
   padding:12px 22px;font-family:'Poppins',sans-serif;font-weight:600;font-size:14.5px;color:var(--forest);
 }
 
@@ -286,11 +384,63 @@ nav .btn{padding:11px 22px;font-size:14px}
 }
 .impact-card p{margin-top:10px;font-size:15.5px;color:var(--ink);font-weight:500}
 .impact-card small{color:#8A9483;font-size:12.5px}
-.sdgs{margin-top:46px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-.sdg{
-  font-size:13px;font-weight:600;padding:9px 18px;border-radius:100px;
-  background:rgba(140,198,63,.14);border:1px solid rgba(140,198,63,.4);color:var(--forest);
+
+/* ---------- story ---------- */
+.story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:clamp(36px,5vw,72px);align-items:center;margin-top:8px}
+.story-copy p{font-size:clamp(15.5px,1.8vw,17.5px);color:var(--muted);margin-top:18px;text-wrap:pretty;max-width:560px}
+.story-copy p b{color:var(--deep)}
+.story-tag{
+  margin-top:28px;padding:18px 24px;border-left:4px solid var(--lime);
+  background:var(--white);border-radius:0 20px 20px 0;
+  font-family:'Poppins',sans-serif;font-size:16.5px;font-weight:600;color:var(--deep);
+  box-shadow:0 14px 34px -24px rgba(28,64,29,.3);
 }
+.story-img{
+  width:100%;max-width:480px;margin:0 auto;aspect-ratio:.96;object-fit:cover;
+  border-radius:56% 44% 48% 52% / 44% 54% 46% 56%;
+  box-shadow:0 24px 60px -24px rgba(44,95,45,.3);
+}
+
+/* ---------- investors ---------- */
+.mom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:48px}
+.mom{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:26px 24px;
+}
+.mom .mico{width:44px;height:44px;border-radius:15px;display:grid;place-items:center;background:rgba(140,198,63,.16);margin-bottom:14px}
+.mom b{font-family:'Poppins',sans-serif;font-size:15.5px;color:#fff;display:block;margin-bottom:4px}
+.mom small{font-size:13px;color:rgba(255,255,255,.62);line-height:1.45;display:block}
+.market-chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+.mchip{
+  font-size:13.5px;font-weight:600;padding:10px 20px;border-radius:100px;
+  background:rgba(140,198,63,.12);border:1px solid rgba(140,198,63,.35);color:#D8EDB4;
+}
+.biz-box{
+  margin-top:52px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+  border-radius:28px;padding:clamp(26px,3.5vw,40px);
+}
+.biz-box h3{color:#fff;font-size:19px;margin-bottom:8px}
+.biz-box>p{font-size:14.5px;color:rgba(255,255,255,.66);max-width:640px}
+.mini-plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:24px}
+.mini-plan{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:18px 20px}
+.mini-plan b{font-family:'Poppins',sans-serif;font-size:22px;color:var(--lime);display:block}
+.mini-plan span{font-size:12.5px;color:rgba(255,255,255,.62)}
+.biz-note{margin-top:18px;font-size:13.5px;color:rgba(255,255,255,.6)}
+.biz-note b{color:var(--gold)}
+.inv-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:44px}
+.inv-hint{font-size:13px;color:rgba(255,255,255,.5);margin-top:14px}
+.calendly-box{
+  margin-top:44px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+  border-radius:28px;padding:clamp(20px,3vw,32px);
+}
+.calendly-box h3{color:#fff;font-size:17px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.calendly-inner{background:#fff;border-radius:18px;overflow:hidden;min-height:120px}
+.cal-soon{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  padding:44px 24px;text-align:center;
+}
+.cal-soon .cal-ico{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;background:rgba(140,198,63,.16);color:var(--forest)}
+.cal-soon b{font-family:'Poppins',sans-serif;color:var(--deep);font-size:16px}
+.cal-soon span{font-size:13.5px;color:var(--muted);max-width:380px}
 
 /* ---------- faq ---------- */
 .faq-wrap{max-width:880px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
@@ -312,8 +462,8 @@ nav .btn{padding:11px 22px;font-size:14px}
 }
 .faq-item.open .chev{transform:rotate(180deg)}
 .faq-a{overflow:hidden;max-height:0;opacity:0;transition:max-height .45s var(--ease),opacity .35s}
-.faq-item.open .faq-a{max-height:320px;opacity:1}
-.faq-a p{margin:0;padding:0 24px 22px;font-size:15px;color:var(--muted);max-width:680px}
+.faq-item.open .faq-a{max-height:340px;opacity:1}
+.faq-a p{margin:0;padding:0 24px 22px;font-size:15px;color:var(--muted);max-width:700px}
 
 /* ---------- team ---------- */
 .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:52px}
@@ -329,45 +479,9 @@ nav .btn{padding:11px 22px;font-size:14px}
   color:#fff;display:grid;place-items:center;
   font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;
 }
-.member .av img{width:100%;height:100%;object-fit:cover}
 .member b{font-family:'Poppins',sans-serif;font-size:15.5px;color:var(--deep);display:block}
 .member small{font-size:13px;color:var(--muted);display:block;line-height:1.4}
 .member .flag{font-size:12px;color:var(--faint)}
-
-/* ---------- contact ---------- */
-.contact-card{
-  background:var(--white);border-radius:clamp(28px,4vw,48px);
-  border:1px solid rgba(44,95,45,.12);box-shadow:0 24px 60px -24px rgba(44,95,45,.28);
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));overflow:hidden;
-}
-.contact-left{
-  padding:clamp(36px,4.5vw,60px);
-  background:linear-gradient(160deg,var(--forest),var(--deep));color:#fff;
-  position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;
-}
-.contact-left::after{
-  content:"";position:absolute;bottom:-120px;right:-120px;width:340px;height:340px;border-radius:50%;
-  background:radial-gradient(closest-side,rgba(140,198,63,.35),transparent 72%);
-}
-.contact-left h2{color:#fff;font-size:clamp(26px,3.2vw,38px)}
-.contact-left p{color:rgba(255,255,255,.78);margin:18px 0 30px;font-size:16px}
-.contact-left .btn-accent{align-self:flex-start;position:relative;z-index:1}
-.cal-hint{margin-top:16px;font-size:13px;color:rgba(255,255,255,.55)}
-.contact-form{padding:clamp(36px,4.5vw,56px)}
-.contact-form h3{font-size:22px;color:var(--deep);margin-bottom:6px}
-.contact-form>p{font-size:14.5px;color:var(--muted);margin-bottom:26px}
-.field{margin-bottom:18px}
-.field label{display:block;font-size:13px;font-weight:600;color:var(--deep);margin-bottom:7px;font-family:'Poppins',sans-serif}
-.field input,.field select,.field textarea{
-  width:100%;padding:13px 16px;border-radius:14px;font-family:'Figtree',sans-serif;font-size:15px;
-  border:1.5px solid rgba(44,95,45,.18);background:var(--cream);color:var(--ink);
-  transition:border-color .2s,box-shadow .2s;outline:none;
-}
-.field input:focus,.field select:focus,.field textarea:focus{
-  border-color:var(--mid);box-shadow:0 0 0 4px rgba(140,198,63,.18);
-}
-.field textarea{resize:vertical;min-height:96px}
-.form-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
 
 /* ---------- footer ---------- */
 footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;position:relative;overflow:hidden}
@@ -394,17 +508,17 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
   <div class="navlinks">
     <a href="#problem" data-i18n="navWhy">Warum</a>
     <a href="#solution" data-i18n="navSolution">Lösung</a>
-    <a href="#how" data-i18n="navHow">So funktioniert's</a>
-    <a href="#impact" data-i18n="navImpact">Wirkung</a>
+    <a href="#plan" data-i18n="navPlan">Der Plan</a>
+    <a href="#pilot" data-i18n="navPilot">Pilotprogramm</a>
+    <a href="#investors" data-i18n="navInvestors">Investoren</a>
     <a href="#faq">FAQ</a>
-    <a href="#team">Team</a>
   </div>
   <div class="nav-right">
     <div class="lang-switch" role="group" aria-label="Sprache">
       <button id="lang-de" type="button">DE</button>
       <button id="lang-en" type="button">EN</button>
     </div>
-    <a class="btn btn-primary" href="https://calendly.com/weconn3ct" target="_blank" rel="noopener" data-i18n="navCta">Demo buchen</a>
+    <a class="btn btn-primary" href="#pilot" data-i18n="navCta">Pilotbetrieb werden</a>
   </div>
 </nav>
 
@@ -416,35 +530,35 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
 
   <div class="detect" aria-hidden="true">
     <div class="detect-box"><i></i><i></i><i></i><i></i><span class="detect-scan"></span></div>
-    <div class="detect-label"><span class="pulse-dot"></span><span data-i18n="detectLabel">Kuh #047 · erkannt</span></div>
+    <div class="detect-label"><span class="pulse-dot"></span><span data-i18n="detectLabel">Kuh #047 · erkannt & verfolgt</span></div>
   </div>
 
   <div class="chip-alert" aria-hidden="true">
-    <span class="dot"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#E8830C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9a6 6 0 1 0-12 0c0 6-2.5 7-2.5 7h17S18 15 18 9Z"/><path d="M10 20a2.2 2.2 0 0 0 4 0"/></svg></span>
-    <span><b data-i18n="chipAlertTitle">Frühwarnung gesendet</b><small data-i18n="chipAlertSub">Fresszeit −22% · Kuh #112 prüfen</small></span>
+    <span class="dot"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#4A8B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a4 4 0 0 0-4 4c-2.2.4-4 2-4 4.5C4 15.5 6 17 8.5 17H12M12 4a4 4 0 0 1 4 4c2.2.4 4 2 4 4.5 0 3-2 4.5-4.5 4.5H12M12 4v16"/></svg></span>
+    <span><b data-i18n="chipTitle">Trainingsdaten erfasst</b><small data-i18n="chipSub">Verhaltensmuster: Fressen · 14:32</small></span>
   </div>
 
   <div class="hero-content">
-    <div style="max-width:720px">
-      <span class="eyebrow" data-i18n="heroEyebrow">Kamerabasierte KI für Milchviehbetriebe</span>
+    <div style="max-width:760px">
+      <div>
+        <span class="badge-win">🏆 <span data-i18n="badgeWin">Gewinner Startup Sussex 2026</span></span><span class="eyebrow" data-i18n="heroEyebrow">Kamerabasierte KI für Milchviehbetriebe</span>
+      </div>
       <h1>
-        <span data-i18n="heroTitle1">Jede Kuh im Blick.</span>
-        <span class="grass" data-i18n="heroTitle2">Jede Minute.</span><br>
-        <span data-i18n="heroTitle3">Ganz ohne</span>
-        <span class="eyes"><span data-i18n="heroTitle4">Sensoren.</span><svg viewBox="0 0 200 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 C 50 4, 150 4, 196 10" stroke="#E8830C" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>
+        <span data-i18n="heroTitle1">Die KI, die jede Kuh</span> <span class="grass" data-i18n="heroTitle2">im Blick hat.</span><br>
+        <span class="eyes"><span data-i18n="heroTitle3">Trainieren Sie sie mit.</span><svg viewBox="0 0 200 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 C 50 4, 150 4, 196 10" stroke="#E8830C" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span>
       </h1>
-      <p class="lead" data-i18n="heroLead">CowCare verwandelt die Kameras, die Sie bereits besitzen, in ein KI-System für Herdengesundheit — und warnt Sie bis zu 48 Stunden, bevor eine Krankheit sichtbar wird.</p>
+      <p class="lead" data-i18n="heroLead">Unser Kuh-Tracking ist entwickelt und auf realem Videomaterial validiert — ganz ohne Sensoren am Tier. Jetzt bringen wir CowCare auf echte Höfe: Wir suchen 5 Pilotbetriebe in Großbritannien und Deutschland, die mit uns die Verhaltenserkennung trainieren. Kostenlos.</p>
       <div class="hero-ctas">
-        <a class="btn btn-accent" href="https://calendly.com/weconn3ct" target="_blank" rel="noopener"><span data-i18n="heroCta1">Kostenlose Hof-Demo buchen</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="btn btn-glass" href="#how" data-i18n="heroCta2">So funktioniert's</a>
+        <a class="btn btn-accent" href="#pilot"><span data-i18n="heroCta1">Pilotbetrieb werden</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-glass" href="#investors" data-i18n="heroCta2">Für Investoren</a>
       </div>
     </div>
 
     <div class="hero-stats">
-      <div><div class="num lime">48h</div><div class="lbl" data-i18n="stat1">frühere Krankheitserkennung</div></div>
-      <div><div class="num gold">4–6×</div><div class="lbl" data-i18n="stat2">Return on Investment</div></div>
-      <div><div class="num">0</div><div class="lbl" data-i18n="stat3">Sensoren am Tier</div></div>
-      <div><div class="num">24/7</div><div class="lbl" data-i18n="stat4">Überwachung, jeden Tag</div></div>
+      <div><div class="num lime" data-i18n="hs1n">Stufe 1 ✓</div><div class="lbl" data-i18n="hs1l">Kuh-Tracking entwickelt & validiert</div></div>
+      <div><div class="num gold">5</div><div class="lbl" data-i18n="hs2l">Pilotplätze in UK & Deutschland</div></div>
+      <div><div class="num">0</div><div class="lbl" data-i18n="hs3l">Sensoren am Tier</div></div>
+      <div><div class="num">£0</div><div class="lbl" data-i18n="hs4l">Kosten für Pilotbetriebe</div></div>
     </div>
   </div>
 
@@ -452,11 +566,11 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
 </header>
 
 <!-- ===== PROBLEM ===== -->
-<section class="section problem" id="problem">
+<section class="section darksec" id="problem">
   <div class="wrap">
     <span class="eyebrow rv" data-i18n="probEyebrow">Das Problem</span>
     <h2 class="rv" style="transition-delay:.08s"><span data-i18n="probTitle1">Krankheiten werden zu spät erkannt —</span><br><span class="hl" data-i18n="probTitle2">und das kostet.</span></h2>
-    <p class="sub rv" style="transition-delay:.14s" data-i18n="probSub">Wenn eine kranke Kuh sichtbare Symptome zeigt, sind Tage an Milchleistung — und manchmal das Tier selbst — bereits verloren.</p>
+    <p class="sub rv" style="transition-delay:.14s" data-i18n="probSub">Wenn eine kranke Kuh sichtbare Symptome zeigt, sind Tage an Milchleistung — und manchmal das Tier selbst — bereits verloren. Kein Landwirt kann jede Kuh rund um die Uhr beobachten. Genau das ändern wir.</p>
     <div class="stats">
       <div class="stat rv" style="transition-delay:.1s">
         <div class="num">~30%</div>
@@ -483,54 +597,171 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
 <section class="section" id="solution">
   <div class="wrap">
     <span class="eyebrow rv" data-i18n="solEyebrow">Die Lösung</span>
-    <h2 class="rv" style="transition-delay:.08s"><span data-i18n="solTitle1">Ein wachsames Auge.</span> <span data-i18n="solTitle2">Vier Fähigkeiten.</span></h2>
-    <p class="sub rv" style="transition-delay:.14s" data-i18n="solSub">CowCare läuft auf Ihren vorhandenen IP-Kameras. Die KI verarbeitet alles lokal auf dem Hof — keine Wearables, keine Cloud-Uploads, DSGVO-konform by design.</p>
+    <h2 class="rv" style="transition-delay:.08s"><span data-i18n="solTitle1">Vier Fähigkeiten.</span> <span data-i18n="solTitle2">Und ein ehrlicher Status für jede.</span></h2>
+    <p class="sub rv" style="transition-delay:.14s" data-i18n="solSub">CowCare läuft auf gewöhnlichen IP-Kameras. Die KI verarbeitet alles lokal auf dem Hof — keine Wearables, keine Cloud-Uploads, DSGVO-konform. Und wir sagen offen, wie weit jede Fähigkeit heute ist.</p>
     <div class="pillars">
       <div class="pillar rv" style="transition-delay:.08s">
+        <span class="ptag done" data-i18n="tag1">Entwickelt ✓</span>
         <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3.4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></div>
         <h3 data-i18n="p1t">Kuh-Tracking mit ID</h3>
-        <p data-i18n="p1d">Jede Kuh erhält eine digitale Identität — rund um die Uhr erkannt und verfolgt, allein per Kamera.</p>
+        <p data-i18n="p1d">Jede Kuh erhält eine digitale Identität — erkannt und verfolgt, allein per Kamera. Auf realem Videomaterial validiert, bereit für den ersten Hof.</p>
       </div>
-      <div class="pillar rv" style="transition-delay:.16s">
+      <div class="pillar orange rv" style="transition-delay:.16s">
+        <span class="ptag now" data-i18n="tag2">In Training — mit Ihnen</span>
         <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a4 4 0 0 0-4 4c-2.2.4-4 2-4 4.5C4 15.5 6 17 8.5 17H12M12 4a4 4 0 0 1 4 4c2.2.4 4 2 4 4.5 0 3-2 4.5-4.5 4.5H12M12 4v16"/></svg></div>
         <h3 data-i18n="p2t">Verhaltenserkennung</h3>
-        <p data-i18n="p2d">Fressen, Trinken, Liegen, Laufen — die KI erkennt die feinen Veränderungen, die Krankheiten früh verraten.</p>
+        <p data-i18n="p2d">Fressen, Trinken, Liegen, Laufen — die KI lernt, die feinen Veränderungen zu deuten, die Krankheiten früh verraten. Genau dafür suchen wir Pilotbetriebe.</p>
       </div>
-      <div class="pillar orange rv" style="transition-delay:.24s">
+      <div class="pillar rv" style="transition-delay:.24s">
+        <span class="ptag beta" data-i18n="tag3">Beta</span>
         <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9a6 6 0 1 0-12 0c0 6-2.5 7-2.5 7h17S18 15 18 9Z"/><path d="M10 20a2.2 2.2 0 0 0 4 0"/></svg></div>
         <h3 data-i18n="p3t">Echtzeit-Warnungen</h3>
-        <p data-i18n="p3d">Priorisierte Push-Nachrichten direkt aufs Handy — handeln in Minuten statt Wochen.</p>
+        <p data-i18n="p3d">Priorisierte Push-Nachrichten direkt aufs Handy — damit aus Erkenntnissen Handlungen werden. In Minuten statt Wochen.</p>
       </div>
       <div class="pillar rv" style="transition-delay:.32s">
+        <span class="ptag next" data-i18n="tag4">Geplant</span>
         <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 4.4 3.4 7.4 8 8 4.6-.6 8-3.6 8-8V6l-8-4Z"/><circle cx="12" cy="11" r="2.6"/></svg></div>
         <h3 data-i18n="p4t">Sicherheits-Erkennung</h3>
-        <p data-i18n="p4d">Erkennt Eindringlinge — Wölfe, fremde Personen, Gefahren — und warnt Sie sofort.</p>
+        <p data-i18n="p4d">Erkennt Eindringlinge — Wölfe, fremde Personen, Gefahren — und schlägt sofort Alarm. Folgt nach der Verhaltenserkennung.</p>
       </div>
     </div>
     <p class="solution-tag rv" style="transition-delay:.2s"><span data-i18n="solTag1">Ein zusätzliches Paar</span> <span class="hl" data-i18n="solTag2">Augen</span> <span data-i18n="solTag3">für jeden Landwirt.</span></p>
   </div>
 </section>
 
-<!-- ===== HOW IT WORKS ===== -->
+<!-- ===== PLAN ===== -->
+<section class="section" id="plan" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow rv" data-i18n="planEyebrow">Der Plan</span>
+    <h2 class="rv" style="transition-delay:.08s" data-i18n="planTitle">Drei Stufen zum Frühwarnsystem.</h2>
+    <p class="sub rv" style="transition-delay:.14s" data-i18n="planSub">Wir bauen CowCare Schritt für Schritt — und sind gerade am wichtigsten Punkt: dem Sprung vom validierten Modell auf echte Höfe.</p>
+    <div class="plan-grid">
+      <div class="stage done rv" style="transition-delay:.08s">
+        <div class="snum">1</div>
+        <h3 data-i18n="st1t">Kuh-Tracking</h3>
+        <p data-i18n="st1d">Jede Kuh erkennen, identifizieren und verfolgen — nur per Kamera. Entstanden aus Forschung an der University of Sussex, weiterentwickelt und auf realem Videomaterial validiert.</p>
+        <span class="stag" data-i18n="st1s">Abgeschlossen ✓</span>
+        <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div class="stage now rv" style="transition-delay:.18s">
+        <div class="snum">2</div>
+        <h3 data-i18n="st2t">Verhaltens-KI trainieren</h3>
+        <p data-i18n="st2d">Auf 5 Pilothöfen lernt die KI, echtes Kuhverhalten zu deuten — Fressen, Liegen, Laufen, Abweichungen. Dafür brauchen wir Sie: Ihre Herde macht das Modell schlau.</p>
+        <span class="stag" data-i18n="st2s">Jetzt — Sie können mitmachen</span>
+        <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div class="stage next rv" style="transition-delay:.28s">
+        <div class="snum">3</div>
+        <h3 data-i18n="st3t">Frühwarnsystem & Launch</h3>
+        <p data-i18n="st3d">Warnungen bis zu 48 Stunden bevor Symptome sichtbar werden, dann der kommerzielle Start: 20 zahlende Höfe in 24 Monaten, Expansion in die EU.</p>
+        <span class="stag" data-i18n="st3s">Als Nächstes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PILOT PROGRAMME ===== -->
+<section class="section" id="pilot" style="padding-top:0">
+  <div class="wrap">
+    <div class="pilot-sec">
+      <span class="eyebrow rv" data-i18n="pilEyebrow">Pilotprogramm</span>
+      <span class="slots rv">⏳ <span data-i18n="pilSlots">5 Plätze · Bewerbung offen</span></span>
+      <h2 class="rv" style="transition-delay:.08s" data-i18n="pilTitle">Werden Sie einer von 5 Pilotbetrieben.</h2>
+      <p class="sub rv" style="transition-delay:.14s" data-i18n="pilSub">Kostenlos für Ihren Hof — wertvoll für die ganze Milchwirtschaft. Als Pilotbetrieb helfen Sie, die Verhaltens-KI mit echten Daten zu trainieren, und nutzen CowCare vor allen anderen.</p>
+      <div class="deal-grid">
+        <div class="deal rv" style="transition-delay:.08s">
+          <h3><span class="dico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6M12 2v13m0 0-4-4m4 4 4-4"/></svg></span><span data-i18n="d1t">Was Sie bekommen</span></h3>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8CC63F" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="d1a">Installation komplett auf unsere Kosten — Kameras & Edge-Gerät inklusive</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8CC63F" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="d1b">Live-Tracking-Dashboard Ihrer Herde ab Tag 1</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8CC63F" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="d1c">Verhaltens-Warnungen als Allererste, sobald sie live gehen</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8CC63F" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="d1d">Dauerhafte Vorzugskonditionen nach dem kommerziellen Start</span></li>
+          </ul>
+        </div>
+        <div class="deal rv" style="transition-delay:.16s">
+          <h3><span class="dico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span data-i18n="d2t">Was wir brauchen</span></h3>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8CC63F" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="d2a">Zugang zu Kamerabildern aus Stall oder Weide</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8CC63F" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="d2b">Ab und zu Feedback aus der Praxis — Sie kennen Ihre Kühe am besten</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8CC63F" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="d2c">Eine Trainingsphase über die Saison 2026/27 — ohne Aufwand in Ihrem Alltag</span></li>
+          </ul>
+        </div>
+        <div class="deal rv" style="transition-delay:.24s">
+          <h3><span class="dico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg></span><span data-i18n="d3t">So läuft es ab</span></h3>
+          <ol>
+            <li><span class="onum">1</span><span><b data-i18n="d3a1">Bewerben</b> — <span data-i18n="d3a2">2 Minuten, Formular unten</span></span></li>
+            <li><span class="onum">2</span><span><b data-i18n="d3b1">Hof-Check</b> — <span data-i18n="d3b2">kurzes Gespräch, Blick auf Ställe & Kameras</span></span></li>
+            <li><span class="onum">3</span><span><b data-i18n="d3c1">Installation</b> — <span data-i18n="d3c2">wir bauen auf, Sie schauen zu</span></span></li>
+            <li><span class="onum">4</span><span><b data-i18n="d3d1">Training läuft</b> — <span data-i18n="d3d2">die KI lernt von Ihrer Herde, Sie sehen alles im Dashboard</span></span></li>
+          </ol>
+        </div>
+      </div>
+
+      <form class="pilot-form rv" action="https://formsubmit.co/mentor.sadiku@weconn3ct.de" method="POST" id="pilot-form">
+        <h3 data-i18n="fTitle">Jetzt als Pilotbetrieb bewerben</h3>
+        <p data-i18n="fSub">Unverbindlich — wir melden uns innerhalb von zwei Werktagen bei Ihnen.</p>
+        <input type="hidden" name="_subject" value="CowCare Pilot-Bewerbung (Website)">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+        <div class="form-row">
+          <div class="field"><label for="f-name" data-i18n="fName">Name</label><input id="f-name" type="text" name="name" required placeholder="Max Bauer"></div>
+          <div class="field"><label for="f-email">E-Mail</label><input id="f-email" type="email" name="email" required placeholder="max@hof.de"></div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-country" data-i18n="fCountry">Land</label>
+            <select id="f-country" name="country">
+              <option data-i18n="fCountry1">Deutschland</option>
+              <option data-i18n="fCountry2">Großbritannien</option>
+              <option data-i18n="fCountry3">Anderes Land</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-size" data-i18n="fHerd">Herdengröße</label>
+            <select id="f-size" name="herd_size">
+              <option data-i18n="fHerd1">Bis 50 Kühe</option>
+              <option selected data-i18n="fHerd2">50 – 150 Kühe</option>
+              <option data-i18n="fHerd3">150 – 300 Kühe</option>
+              <option data-i18n="fHerd4">300+ Kühe</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-cams" data-i18n="fCams">Kameras vorhanden?</label>
+            <select id="f-cams" name="cameras">
+              <option data-i18n="fCams1">Ja, im Stall</option>
+              <option data-i18n="fCams2">Teilweise</option>
+              <option selected data-i18n="fCams3">Noch keine</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="f-msg" data-i18n="fMsg">Nachricht (optional)</label><textarea id="f-msg" name="message" data-i18n-ph="fMsgPh" placeholder="Erzählen Sie uns kurz von Ihrem Hof…"></textarea></div>
+        <button class="btn btn-accent" type="submit" style="width:100%;justify-content:center"><span data-i18n="fSend">Bewerbung senden</span></button>
+        <p class="form-hint" data-i18n="fHint">Ihre Daten werden nur zur Kontaktaufnahme verwendet — kein Newsletter, keine Weitergabe.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECHNOLOGY ===== -->
 <section class="section" id="how" style="padding-top:0">
   <div class="wrap">
     <div class="how">
       <div class="how-grid">
         <div>
-          <span class="eyebrow rv" data-i18n="howEyebrow">So funktioniert's</span>
+          <span class="eyebrow rv" data-i18n="howEyebrow">Die Technologie</span>
           <h2 class="rv" style="transition-delay:.08s" data-i18n="howTitle">Von der Kamera zur Warnung in drei Schritten.</h2>
           <div class="steps">
             <div class="step rv" style="transition-delay:.1s">
               <div class="n">1</div>
-              <div><h3 data-i18n="s1t">Ihre vorhandenen Kameras</h3><p data-i18n="s1d">CowCare verbindet sich mit Standard-IP-Kameras in Stall und Weide — oder wir installieren sie, gebündelt und finanziert.</p></div>
+              <div><h3 data-i18n="s1t">Gewöhnliche IP-Kameras</h3><p data-i18n="s1d">CowCare arbeitet mit Standard-Kameras in Stall und Weide — vorhandene werden eingebunden, fehlende installieren wir.</p></div>
             </div>
             <div class="step rv" style="transition-delay:.2s">
               <div class="n">2</div>
-              <div><h3 data-i18n="s2t">KI auf dem Hof, nicht in der Cloud</h3><p data-i18n="s2d">Die Videoanalyse läuft lokal auf einem NVIDIA-Jetson-Edge-Gerät. Rohmaterial verlässt nie den Hof und wird nach 14–30 Tagen gelöscht.</p></div>
+              <div><h3 data-i18n="s2t">KI auf dem Hof, nicht in der Cloud</h3><p data-i18n="s2d">Die Videoanalyse läuft lokal auf einem Edge-Gerät (NVIDIA Jetson). Rohmaterial verlässt nie den Hof und wird nach 14–30 Tagen gelöscht — DSGVO-konform.</p></div>
             </div>
             <div class="step rv" style="transition-delay:.3s">
               <div class="n">3</div>
-              <div><h3 data-i18n="s3t">Warnungen aufs Handy</h3><p data-i18n="s3d">Auffälligkeiten werden zu priorisierten Push-Warnungen — bis zu 48 Stunden bevor Sie die Krankheit selbst bemerken würden.</p></div>
+              <div><h3 data-i18n="s3t">Erkenntnisse aufs Handy</h3><p data-i18n="s3d">Aus Bewegungs- und Verhaltensdaten werden verständliche Hinweise und Warnungen — direkt in der App.</p></div>
             </div>
           </div>
           <div class="zero-badge rv" style="transition-delay:.35s">
@@ -544,11 +775,12 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
   </div>
 </section>
 
-<!-- ===== IMPACT ===== -->
+<!-- ===== IMPACT / RESEARCH ===== -->
 <section class="section" id="impact" style="padding-top:0">
   <div class="wrap">
-    <span class="eyebrow rv" data-i18n="impEyebrow">Wirkung pro 100-Kuh-Betrieb</span>
-    <h2 class="rv" style="transition-delay:.08s"><span data-i18n="impTitle1">Gesündere Kühe. Stärkere Höfe.</span><br><span class="hl" style="color:var(--accent)" data-i18n="impTitle2">Sauberere Lebensmittel.</span></h2>
+    <span class="eyebrow rv" data-i18n="impEyebrow">Das Potenzial</span>
+    <h2 class="rv" style="transition-delay:.08s"><span data-i18n="impTitle1">Was die Forschung zeigt —</span><br><span style="color:var(--accent)" data-i18n="impTitle2">und woran wir uns messen lassen.</span></h2>
+    <p class="sub rv" style="transition-delay:.14s" data-i18n="impSub">Diese Zahlen stammen aus Studien und Branchendaten zur kamerabasierten Früherkennung. Sie sind das Ziel, das wir mit unseren Pilotbetrieben erreichen wollen — pro 100-Kuh-Betrieb.</p>
     <div class="impact-grid">
       <div class="impact-card rv" style="transition-delay:.05s"><div class="big">48h</div><p data-i18n="imp1">frühere Krankheitserkennung</p><small>Leach et al. 2012</small></div>
       <div class="impact-card rv" style="transition-delay:.12s"><div class="big">30–40%</div><p data-i18n="imp2">geringere Behandlungskosten</p><small>AHDB</small></div>
@@ -557,49 +789,90 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
       <div class="impact-card rv" style="transition-delay:.33s"><div class="big">365+ h</div><p data-i18n="imp5">gesparte Arbeit pro Jahr</p><small data-i18n="imp5src">Beobachtungszeit ersetzt</small></div>
       <div class="impact-card rv" style="transition-delay:.4s"><div class="big">4–6×</div><p data-i18n="imp6">Return on Investment</p><small data-i18n="imp6src">£12–20K Ersparnis pro Jahr</small></div>
     </div>
-    <div class="sdgs rv" style="transition-delay:.2s">
-      <span class="sdg">SDG 2 · <span data-i18n="sdg2">Kein Hunger</span></span>
-      <span class="sdg">SDG 3 · <span data-i18n="sdg3">Gesundheit</span></span>
-      <span class="sdg">SDG 12 · <span data-i18n="sdg12">Nachhaltiger Konsum</span></span>
-      <span class="sdg">SDG 15 · <span data-i18n="sdg15">Leben an Land</span></span>
+  </div>
+</section>
+
+<!-- ===== STORY ===== -->
+<section class="section" id="story" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow rv" data-i18n="stoEyebrow">Unsere Geschichte</span>
+    <h2 class="rv" style="transition-delay:.08s" data-i18n="stoTitle">Aus einer Masterarbeit wurde eine Mission.</h2>
+    <div class="story-grid">
+      <div class="story-copy">
+        <p class="rv" style="transition-delay:.1s"><span data-i18n="sto1a">CowCare beginnt an der </span><b data-i18n="sto1b">University of Sussex</b><span data-i18n="sto1c">: Dort entwickelte Praveenan Mathew in seiner Masterarbeit eine KI, die Kühe zuverlässig erkennt und verfolgt — allein mit Kameras, ohne einen einzigen Sensor am Tier.</span></p>
+        <p class="rv" style="transition-delay:.18s"><span data-i18n="sto2a">Gemeinsam mit </span><b>WECONN3CT</b><span data-i18n="sto2b">, einem KI- und Softwareentwicklungsunternehmen aus Deutschland, wurde aus der Forschungsarbeit ein echtes Produkt: ein System, das Landwirten die Augen erweitert, statt ihre Tiere zu verkabeln.</span></p>
+        <p class="rv" style="transition-delay:.26s" data-i18n="sto3">Dahinter steht eine einfache Überzeugung: Technologie soll der Landwirtschaft dienen — gesündere Tiere, weniger Antibiotika, weniger Verluste. Nicht Hightech um der Technik willen, sondern Technik im Dienst von Tier, Mensch und Umwelt.</p>
+        <div class="story-tag rv" style="transition-delay:.34s">🌱 <span data-i18n="stoTag">Eine Vision aus Sussex. Ein Engineering-Rückgrat aus Deutschland. Eine Mission für die Landwirtschaft.</span></div>
+      </div>
+      <img class="story-img rv" style="transition-delay:.2s" src="assets/cow-ai.jpg" alt="KI-Analyse einer Kuh mit Erkennungspunkten" loading="lazy">
     </div>
   </div>
 </section>
 
-<!-- ===== FAQ ===== -->
-<section class="section" id="faq" style="padding-top:0">
-  <div class="faq-wrap">
-    <div class="faq-head">
-      <span class="eyebrow rv">FAQ</span>
-      <h2 class="rv" style="transition-delay:.08s;font-size:clamp(28px,4vw,46px)" data-i18n="faqTitle">Häufige Fragen</h2>
+<!-- ===== INVESTORS ===== -->
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="margin-bottom:-2px"><path d="M0 50 C 260 90, 480 6, 760 36 C 1040 66, 1240 24, 1440 44 L 1440 90 L 0 90 Z" fill="#1C401D"/></svg>
+<section class="section darksec" id="investors">
+  <div class="wrap">
+    <span class="eyebrow rv" data-i18n="invEyebrow">Für Investoren</span>
+    <h2 class="rv" style="transition-delay:.08s"><span data-i18n="invTitle1">Wir öffnen unsere</span> <span style="color:var(--lime)" data-i18n="invTitle2">Seed-Runde.</span></h2>
+    <p class="sub rv" style="transition-delay:.14s" data-i18n="invSub">Kamerabasierte Herdengesundheit ist eine Kategorie, die gerade entsteht — und CowCare ist das einzige System, das ganz ohne Sensoren am Tier auskommt. Für die nächste Stufe holen wir Investoren an Bord: Verhaltens-KI trainieren, erste zahlende Höfe, Team ausbauen.</p>
+
+    <div class="mom-grid">
+      <div class="mom rv" style="transition-delay:.05s">
+        <div class="mico">🏆</div>
+        <b data-i18n="mom1t">Startup Sussex 2026 gewonnen</b>
+        <small data-i18n="mom1d">Durchgesetzt im universitätsweiten Wettbewerb — inklusive Preisgeld als Katalysator.</small>
+      </div>
+      <div class="mom rv" style="transition-delay:.12s">
+        <div class="mico">✅</div>
+        <b data-i18n="mom2t">Tracking entwickelt & validiert</b>
+        <small data-i18n="mom2d">Kern-Technologie auf realem Videomaterial verifiziert — bereit für den Feldeinsatz.</small>
+      </div>
+      <div class="mom rv" style="transition-delay:.19s">
+        <div class="mico">🐄</div>
+        <b data-i18n="mom3t">Pilotprogramm läuft an</b>
+        <small data-i18n="mom3d">5 Pilotbetriebe in UK & Deutschland — die Basis für Trainingsdaten und Referenzen.</small>
+      </div>
+      <div class="mom rv" style="transition-delay:.26s">
+        <div class="mico">🎓</div>
+        <b data-i18n="mom4t">Forschung University of Sussex</b>
+        <small data-i18n="mom4d">Wissenschaftliches Fundament plus Veterinär-Expertise im Team.</small>
+      </div>
     </div>
-    <div class="faq-list">
-      <div class="faq-item open rv" style="transition-delay:.05s">
-        <button class="faq-q" type="button"><span data-i18n="faq1q">Brauche ich neue Kameras?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
-        <div class="faq-a"><p data-i18n="faq1a">In den meisten Fällen nicht. CowCare arbeitet mit handelsüblichen IP-Kameras. Falls Sie noch keine haben, installieren wir sie — gebündelt und auf Wunsch über 2–3 Jahre finanziert.</p></div>
+
+    <div class="market-chips rv" style="transition-delay:.2s">
+      <span class="mchip" data-i18n="mk1">54.000 Milchviehbetriebe in UK & Deutschland</span>
+      <span class="mchip" data-i18n="mk2">$20 Mrd. KI in der Milchwirtschaft bis 2032</span>
+      <span class="mchip" data-i18n="mk3">15,4% CAGR im KI-Segment</span>
+      <span class="mchip" data-i18n="mk4">Kategorie-Beweis: CattleEye → 2023 von GEA übernommen</span>
+    </div>
+
+    <div class="biz-box rv" style="transition-delay:.2s">
+      <h3 data-i18n="bizT">Das Geschäftsmodell nach dem Pilotprogramm</h3>
+      <p data-i18n="bizD">Jahresabo nach Herdengröße plus einmalige Einrichtung — Hardware gebündelt oder über 2–3 Jahre finanziert. Wiederkehrender Umsatz ab dem kommerziellen Start.</p>
+      <div class="mini-plans">
+        <div class="mini-plan"><b>£1.500</b><span data-i18n="mp1">pro Jahr · bis 50 Kühe</span></div>
+        <div class="mini-plan"><b>£3.000</b><span data-i18n="mp2">pro Jahr · ~100 Kühe</span></div>
+        <div class="mini-plan"><b>£7.500</b><span data-i18n="mp3">pro Jahr · 300+ Kühe</span></div>
       </div>
-      <div class="faq-item rv" style="transition-delay:.1s">
-        <button class="faq-q" type="button"><span data-i18n="faq2q">Wo werden meine Daten verarbeitet?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
-        <div class="faq-a"><p data-i18n="faq2a">Direkt auf Ihrem Hof. Die KI läuft auf einem lokalen Edge-Gerät (NVIDIA Jetson). Rohvideos verlassen den Betrieb nie und werden nach 14–30 Tagen automatisch gelöscht — DSGVO-konform by design.</p></div>
-      </div>
-      <div class="faq-item rv" style="transition-delay:.15s">
-        <button class="faq-q" type="button"><span data-i18n="faq3q">Wie viel früher erkenne ich kranke Kühe?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
-        <div class="faq-a"><p data-i18n="faq3a">Bis zu 48 Stunden, bevor Symptome mit bloßem Auge sichtbar werden. Die KI erkennt feine Verhaltensänderungen — kürzere Fresszeiten, längeres Liegen, veränderte Laufmuster — lange vor dem klinischen Ausbruch.</p></div>
-      </div>
-      <div class="faq-item rv" style="transition-delay:.2s">
-        <button class="faq-q" type="button"><span data-i18n="faq4q">Funktioniert CowCare auch auf der Weide?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
-        <div class="faq-a"><p data-i18n="faq4a">Ja. Mit wetterfesten Außenkameras deckt CowCare auch Weideflächen ab — inklusive Erkennung von Eindringlingen wie Wölfen oder unbekannten Personen.</p></div>
-      </div>
-      <div class="faq-item rv" style="transition-delay:.25s">
-        <button class="faq-q" type="button"><span data-i18n="faq5q">Wie lange dauert die Einrichtung?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
-        <div class="faq-a"><p data-i18n="faq5a">Typischerweise 1–2 Tage. Wir prüfen Ihre Kamera-Abdeckung, installieren das Edge-Gerät und richten die App ein. Danach lernt das System Ihre Herde innerhalb weniger Tage kennen.</p></div>
-      </div>
+      <p class="biz-note"><b data-i18n="bizN1">Pilotbetriebe erhalten dauerhaft Vorzugskonditionen.</b> <span data-i18n="bizN2">Ein 100-Kuh-Betrieb spart laut Forschung £12–20K jährlich — ein 4–6× Return für den Landwirt.</span></p>
+    </div>
+
+    <div class="inv-cta rv" style="transition-delay:.2s">
+      <a class="btn btn-lime js-investor-mail" href="mailto:info@weconn3ct.de"><span data-i18n="invBtn">Gespräch anfragen</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <span style="font-size:14px;color:rgba(255,255,255,.6)" data-i18n="invOr">— Zahlen, Deck und Details im persönlichen Gespräch.</span>
+    </div>
+
+    <div class="calendly-box rv" style="transition-delay:.25s">
+      <h3>📅 <span data-i18n="calT">Oder direkt einen Termin buchen</span></h3>
+      <div class="calendly-inner" id="calendly-slot"></div>
     </div>
   </div>
 </section>
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="transform:scaleY(-1);margin-top:-2px"><path d="M0 50 C 260 90, 480 6, 760 36 C 1040 66, 1240 24, 1440 44 L 1440 90 L 0 90 Z" fill="#1C401D"/></svg>
 
 <!-- ===== TEAM ===== -->
-<section class="section" id="team" style="padding-top:0;padding-bottom:clamp(40px,6vw,80px)">
+<section class="section" id="team" style="padding-bottom:clamp(40px,6vw,80px)">
   <div class="wrap">
     <span class="eyebrow rv">Team</span>
     <h2 class="rv" style="transition-delay:.08s" data-i18n="teamTitle">Ein globales Team aus Experten.</h2>
@@ -615,41 +888,38 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
-<section class="section" id="contact" style="padding-top:clamp(30px,4vw,60px)">
-  <div class="wrap">
-    <div class="contact-card rv">
-      <div class="contact-left">
-        <h2 data-i18n="ctaTitle">Bereit, CowCare auf Ihrem Hof zu sehen?</h2>
-        <p data-i18n="ctaSub">Buchen Sie eine kostenlose 30-Minuten-Demo — wir zeigen Ihnen das System, prüfen Ihre Kameras und schätzen Ihre Einsparungen.</p>
-        <a class="btn btn-accent" href="https://calendly.com/weconn3ct" target="_blank" rel="noopener">
-          <span data-i18n="ctaBtn">Termin über Calendly wählen</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <p class="cal-hint" data-i18n="ctaHint">Oder schreiben Sie uns direkt — wir antworten innerhalb eines Werktags.</p>
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq" style="padding-top:0">
+  <div class="faq-wrap">
+    <div class="faq-head">
+      <span class="eyebrow rv">FAQ</span>
+      <h2 class="rv" style="transition-delay:.08s;font-size:clamp(28px,4vw,46px)" data-i18n="faqTitle">Häufige Fragen</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open rv" style="transition-delay:.05s">
+        <button class="faq-q" type="button"><span data-i18n="faq1q">Was kostet mich das Pilotprogramm?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <div class="faq-a"><p data-i18n="faq1a">Nichts. Kameras, Edge-Gerät, Installation und Software gehen komplett auf unsere Kosten. Sie geben uns dafür Zugang zu Kamerabildern und gelegentliches Feedback — und sichern sich dauerhafte Vorzugskonditionen für die Zeit nach dem Pilot.</p></div>
       </div>
-      <form class="contact-form" action="https://formsubmit.co/mentor.sadiku@weconn3ct.de" method="POST">
-        <h3 data-i18n="formTitle">Erzählen Sie uns von Ihrem Hof</h3>
-        <p data-i18n="formSub">Wir melden uns mit einer individuellen Einschätzung.</p>
-        <input type="hidden" name="_subject" value="New CowCare website enquiry">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" style="display:none">
-        <div class="form-row">
-          <div class="field"><label for="f-name" data-i18n="fName">Name</label><input id="f-name" type="text" name="name" required placeholder="Jane Miller"></div>
-          <div class="field"><label for="f-email">E-Mail</label><input id="f-email" type="email" name="email" required placeholder="jane@farm.co.uk"></div>
-        </div>
-        <div class="field">
-          <label for="f-size" data-i18n="fHerd">Herdengröße</label>
-          <select id="f-size" name="herd_size">
-            <option data-i18n="fHerd1">Bis 50 Kühe</option>
-            <option selected data-i18n="fHerd2">50 – 150 Kühe</option>
-            <option data-i18n="fHerd3">150 – 300 Kühe</option>
-            <option data-i18n="fHerd4">300+ Kühe</option>
-          </select>
-        </div>
-        <div class="field"><label for="f-msg" data-i18n="fMsg">Nachricht</label><textarea id="f-msg" name="message" data-i18n-ph="fMsgPh" placeholder="Erzählen Sie uns von Ihrem Hof, Ihren Kameras oder Ihrer Herausforderung…"></textarea></div>
-        <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center" data-i18n="fSend">Anfrage senden</button>
-      </form>
+      <div class="faq-item rv" style="transition-delay:.1s">
+        <button class="faq-q" type="button"><span data-i18n="faq2q">Was passiert mit meinen Daten und Videos?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <div class="faq-a"><p data-i18n="faq2a">Die Analyse läuft lokal auf Ihrem Hof, auf einem Edge-Gerät. Rohvideos verlassen den Betrieb nicht und werden nach 14–30 Tagen automatisch gelöscht. Fürs KI-Training verwenden wir nur ausgewählte Ausschnitte — und nur mit Ihrem Einverständnis. DSGVO-konform.</p></div>
+      </div>
+      <div class="faq-item rv" style="transition-delay:.15s">
+        <button class="faq-q" type="button"><span data-i18n="faq3q">Brauche ich eigene Kameras?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <div class="faq-a"><p data-i18n="faq3a">Nein. Vorhandene IP-Kameras binden wir ein; fehlt etwas, installieren wir es im Pilotprogramm auf unsere Kosten. Im Bewerbungsformular können Sie einfach angeben, was schon da ist.</p></div>
+      </div>
+      <div class="faq-item rv" style="transition-delay:.2s">
+        <button class="faq-q" type="button"><span data-i18n="faq4q">Wie lange läuft das Pilotprogramm — und wie viel Aufwand habe ich?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <div class="faq-a"><p data-i18n="faq4a">Die Trainingsphase läuft über die Saison 2026/27. Ihr Aufwand ist minimal: Das System arbeitet im Hintergrund, Sie führen Ihren Betrieb wie immer. Ab und zu fragen wir nach Ihrer Einschätzung — Sie kennen Ihre Kühe schließlich am besten.</p></div>
+      </div>
+      <div class="faq-item rv" style="transition-delay:.25s">
+        <button class="faq-q" type="button"><span data-i18n="faq5q">Was kann die KI heute schon — und was noch nicht?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <div class="faq-a"><p data-i18n="faq5a">Ehrliche Antwort: Das Kuh-Tracking — jede Kuh erkennen und verfolgen — ist entwickelt und auf realem Videomaterial validiert. Die Verhaltenserkennung wird jetzt mit den Pilotbetrieben trainiert. Das Frühwarnsystem (bis zu 48 Stunden Vorsprung laut Forschung) ist das Ziel von Stufe 3.</p></div>
+      </div>
+      <div class="faq-item rv" style="transition-delay:.3s">
+        <button class="faq-q" type="button"><span data-i18n="faq6q">Wie kann ich in CowCare investieren?</span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2C5F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button>
+        <div class="faq-a"><p data-i18n="faq6a">Unsere Seed-Runde ist offen. Schreiben Sie uns über den Investoren-Bereich — wir teilen Zahlen, Deck und Details gern im persönlichen Gespräch.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -663,15 +933,15 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
           <span class="logo-chip"><img src="assets/logo.png" alt=""></span>
           <b>CowCare</b>
         </div>
-        <p class="foot-tag" data-i18n="footTag">Gesündere Kühe. Smartere Höfe. Eine nachhaltigere Milchwirtschaft.</p>
+        <p class="foot-tag" data-i18n="footTag">Gesündere Kühe. Stärkere Höfe. Technik im Dienst von Tier, Mensch und Umwelt.</p>
       </div>
       <div class="foot-links">
         <a href="#problem" data-i18n="navWhy">Warum</a>
         <a href="#solution" data-i18n="navSolution">Lösung</a>
-        <a href="#how" data-i18n="navHow">So funktioniert's</a>
-        <a href="#impact" data-i18n="navImpact">Wirkung</a>
+        <a href="#plan" data-i18n="navPlan">Der Plan</a>
+        <a href="#pilot" data-i18n="navPilot">Pilotprogramm</a>
+        <a href="#investors" data-i18n="navInvestors">Investoren</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact" data-i18n="navContact">Kontakt</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -682,123 +952,229 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
 </footer>
 
 <script>
+/* ===== Konfiguration — hier zentral austauschen ===== */
+const CALENDLY_URL = 'PLACEHOLDER'; // TODO: echten Calendly-Link eintragen, z. B. 'https://calendly.com/dein-name/cowcare'
+const INVESTOR_EMAIL = {
+  de: 'info@weconn3ct.de',
+  en: 'PLACEHOLDER' // TODO: englische Investoren-Adresse eintragen — bis dahin fällt EN auf die DE-Adresse zurück
+};
+
 /* ===== i18n ===== */
 const I18N = {
   de: {
-    navWhy:'Warum', navSolution:'Lösung', navHow:"So funktioniert's", navImpact:'Wirkung', navContact:'Kontakt', navCta:'Demo buchen',
+    navWhy:'Warum', navSolution:'Lösung', navPlan:'Der Plan', navPilot:'Pilotprogramm', navInvestors:'Investoren', navCta:'Pilotbetrieb werden',
+    badgeWin:'Gewinner Startup Sussex 2026',
     heroEyebrow:'Kamerabasierte KI für Milchviehbetriebe',
-    heroTitle1:'Jede Kuh im Blick.', heroTitle2:'Jede Minute.', heroTitle3:'Ganz ohne', heroTitle4:'Sensoren.',
-    heroLead:'CowCare verwandelt die Kameras, die Sie bereits besitzen, in ein KI-System für Herdengesundheit — und warnt Sie bis zu 48 Stunden, bevor eine Krankheit sichtbar wird.',
-    heroCta1:'Kostenlose Hof-Demo buchen', heroCta2:"So funktioniert's",
-    detectLabel:'Kuh #047 · erkannt',
-    chipAlertTitle:'Frühwarnung gesendet', chipAlertSub:'Fresszeit −22% · Kuh #112 prüfen',
-    stat1:'frühere Krankheitserkennung', stat2:'Return on Investment', stat3:'Sensoren am Tier', stat4:'Überwachung, jeden Tag',
+    heroTitle1:'Die KI, die jede Kuh', heroTitle2:'im Blick hat.', heroTitle3:'Trainieren Sie sie mit.',
+    heroLead:'Unser Kuh-Tracking ist entwickelt und auf realem Videomaterial validiert — ganz ohne Sensoren am Tier. Jetzt bringen wir CowCare auf echte Höfe: Wir suchen 5 Pilotbetriebe in Großbritannien und Deutschland, die mit uns die Verhaltenserkennung trainieren. Kostenlos.',
+    heroCta1:'Pilotbetrieb werden', heroCta2:'Für Investoren',
+    detectLabel:'Kuh #047 · erkannt & verfolgt',
+    chipTitle:'Trainingsdaten erfasst', chipSub:'Verhaltensmuster: Fressen · 14:32',
+    hs1n:'Stufe 1 ✓', hs1l:'Kuh-Tracking entwickelt & validiert', hs2l:'Pilotplätze in UK & Deutschland', hs3l:'Sensoren am Tier', hs4l:'Kosten für Pilotbetriebe',
     probEyebrow:'Das Problem',
     probTitle1:'Krankheiten werden zu spät erkannt —', probTitle2:'und das kostet.',
-    probSub:'Wenn eine kranke Kuh sichtbare Symptome zeigt, sind Tage an Milchleistung — und manchmal das Tier selbst — bereits verloren.',
+    probSub:'Wenn eine kranke Kuh sichtbare Symptome zeigt, sind Tage an Milchleistung — und manchmal das Tier selbst — bereits verloren. Kein Landwirt kann jede Kuh rund um die Uhr beobachten. Genau das ändern wir.',
     probStat1:'der Kühe in britischen Herden sind zu jedem Zeitpunkt lahm',
     probStat2:'gehen in Großbritannien jedes Jahr durch Mastitis verloren',
     probStat3:'stiller Milchleistungsabfall, bevor eine Krankheit sichtbar wird',
     probStat3Src:'Schwedische klinische Studie', weeks:'Wochen',
     solEyebrow:'Die Lösung',
-    solTitle1:'Ein wachsames Auge.', solTitle2:'Vier Fähigkeiten.',
-    solSub:'CowCare läuft auf Ihren vorhandenen IP-Kameras. Die KI verarbeitet alles lokal auf dem Hof — keine Wearables, keine Cloud-Uploads, DSGVO-konform by design.',
-    p1t:'Kuh-Tracking mit ID', p1d:'Jede Kuh erhält eine digitale Identität — rund um die Uhr erkannt und verfolgt, allein per Kamera.',
-    p2t:'Verhaltenserkennung', p2d:'Fressen, Trinken, Liegen, Laufen — die KI erkennt die feinen Veränderungen, die Krankheiten früh verraten.',
-    p3t:'Echtzeit-Warnungen', p3d:'Priorisierte Push-Nachrichten direkt aufs Handy — handeln in Minuten statt Wochen.',
-    p4t:'Sicherheits-Erkennung', p4d:'Erkennt Eindringlinge — Wölfe, fremde Personen, Gefahren — und warnt Sie sofort.',
+    solTitle1:'Vier Fähigkeiten.', solTitle2:'Und ein ehrlicher Status für jede.',
+    solSub:'CowCare läuft auf gewöhnlichen IP-Kameras. Die KI verarbeitet alles lokal auf dem Hof — keine Wearables, keine Cloud-Uploads, DSGVO-konform. Und wir sagen offen, wie weit jede Fähigkeit heute ist.',
+    tag1:'Entwickelt ✓', tag2:'In Training — mit Ihnen', tag3:'Beta', tag4:'Geplant',
+    p1t:'Kuh-Tracking mit ID', p1d:'Jede Kuh erhält eine digitale Identität — erkannt und verfolgt, allein per Kamera. Auf realem Videomaterial validiert, bereit für den ersten Hof.',
+    p2t:'Verhaltenserkennung', p2d:'Fressen, Trinken, Liegen, Laufen — die KI lernt, die feinen Veränderungen zu deuten, die Krankheiten früh verraten. Genau dafür suchen wir Pilotbetriebe.',
+    p3t:'Echtzeit-Warnungen', p3d:'Priorisierte Push-Nachrichten direkt aufs Handy — damit aus Erkenntnissen Handlungen werden. In Minuten statt Wochen.',
+    p4t:'Sicherheits-Erkennung', p4d:'Erkennt Eindringlinge — Wölfe, fremde Personen, Gefahren — und schlägt sofort Alarm. Folgt nach der Verhaltenserkennung.',
     solTag1:'Ein zusätzliches Paar', solTag2:'Augen', solTag3:'für jeden Landwirt.',
-    howEyebrow:"So funktioniert's", howTitle:'Von der Kamera zur Warnung in drei Schritten.',
-    s1t:'Ihre vorhandenen Kameras', s1d:'CowCare verbindet sich mit Standard-IP-Kameras in Stall und Weide — oder wir installieren sie, gebündelt und finanziert.',
-    s2t:'KI auf dem Hof, nicht in der Cloud', s2d:'Die Videoanalyse läuft lokal auf einem NVIDIA-Jetson-Edge-Gerät. Rohmaterial verlässt nie den Hof und wird nach 14–30 Tagen gelöscht.',
-    s3t:'Warnungen aufs Handy', s3d:'Auffälligkeiten werden zu priorisierten Push-Warnungen — bis zu 48 Stunden bevor Sie die Krankheit selbst bemerken würden.',
+    planEyebrow:'Der Plan', planTitle:'Drei Stufen zum Frühwarnsystem.',
+    planSub:'Wir bauen CowCare Schritt für Schritt — und sind gerade am wichtigsten Punkt: dem Sprung vom validierten Modell auf echte Höfe.',
+    st1t:'Kuh-Tracking', st1d:'Jede Kuh erkennen, identifizieren und verfolgen — nur per Kamera. Entstanden aus Forschung an der University of Sussex, weiterentwickelt und auf realem Videomaterial validiert.', st1s:'Abgeschlossen ✓',
+    st2t:'Verhaltens-KI trainieren', st2d:'Auf 5 Pilothöfen lernt die KI, echtes Kuhverhalten zu deuten — Fressen, Liegen, Laufen, Abweichungen. Dafür brauchen wir Sie: Ihre Herde macht das Modell schlau.', st2s:'Jetzt — Sie können mitmachen',
+    st3t:'Frühwarnsystem & Launch', st3d:'Warnungen bis zu 48 Stunden bevor Symptome sichtbar werden, dann der kommerzielle Start: 20 zahlende Höfe in 24 Monaten, Expansion in die EU.', st3s:'Als Nächstes',
+    pilEyebrow:'Pilotprogramm', pilSlots:'5 Plätze · Bewerbung offen',
+    pilTitle:'Werden Sie einer von 5 Pilotbetrieben.',
+    pilSub:'Kostenlos für Ihren Hof — wertvoll für die ganze Milchwirtschaft. Als Pilotbetrieb helfen Sie, die Verhaltens-KI mit echten Daten zu trainieren, und nutzen CowCare vor allen anderen.',
+    d1t:'Was Sie bekommen',
+    d1a:'Installation komplett auf unsere Kosten — Kameras & Edge-Gerät inklusive',
+    d1b:'Live-Tracking-Dashboard Ihrer Herde ab Tag 1',
+    d1c:'Verhaltens-Warnungen als Allererste, sobald sie live gehen',
+    d1d:'Dauerhafte Vorzugskonditionen nach dem kommerziellen Start',
+    d2t:'Was wir brauchen',
+    d2a:'Zugang zu Kamerabildern aus Stall oder Weide',
+    d2b:'Ab und zu Feedback aus der Praxis — Sie kennen Ihre Kühe am besten',
+    d2c:'Eine Trainingsphase über die Saison 2026/27 — ohne Aufwand in Ihrem Alltag',
+    d3t:'So läuft es ab',
+    d3a1:'Bewerben', d3a2:'2 Minuten, Formular unten',
+    d3b1:'Hof-Check', d3b2:'kurzes Gespräch, Blick auf Ställe & Kameras',
+    d3c1:'Installation', d3c2:'wir bauen auf, Sie schauen zu',
+    d3d1:'Training läuft', d3d2:'die KI lernt von Ihrer Herde, Sie sehen alles im Dashboard',
+    fTitle:'Jetzt als Pilotbetrieb bewerben', fSub:'Unverbindlich — wir melden uns innerhalb von zwei Werktagen bei Ihnen.',
+    fName:'Name', fCountry:'Land', fCountry1:'Deutschland', fCountry2:'Großbritannien', fCountry3:'Anderes Land',
+    fHerd:'Herdengröße', fHerd1:'Bis 50 Kühe', fHerd2:'50 – 150 Kühe', fHerd3:'150 – 300 Kühe', fHerd4:'300+ Kühe',
+    fCams:'Kameras vorhanden?', fCams1:'Ja, im Stall', fCams2:'Teilweise', fCams3:'Noch keine',
+    fMsg:'Nachricht (optional)', fMsgPh:'Erzählen Sie uns kurz von Ihrem Hof…', fSend:'Bewerbung senden',
+    fHint:'Ihre Daten werden nur zur Kontaktaufnahme verwendet — kein Newsletter, keine Weitergabe.',
+    howEyebrow:'Die Technologie', howTitle:'Von der Kamera zur Warnung in drei Schritten.',
+    s1t:'Gewöhnliche IP-Kameras', s1d:'CowCare arbeitet mit Standard-Kameras in Stall und Weide — vorhandene werden eingebunden, fehlende installieren wir.',
+    s2t:'KI auf dem Hof, nicht in der Cloud', s2d:'Die Videoanalyse läuft lokal auf einem Edge-Gerät (NVIDIA Jetson). Rohmaterial verlässt nie den Hof und wird nach 14–30 Tagen gelöscht — DSGVO-konform.',
+    s3t:'Erkenntnisse aufs Handy', s3d:'Aus Bewegungs- und Verhaltensdaten werden verständliche Hinweise und Warnungen — direkt in der App.',
     zeroBadge:'Null Sensoren, Halsbänder oder Ohrmarken am Tier',
-    impEyebrow:'Wirkung pro 100-Kuh-Betrieb',
-    impTitle1:'Gesündere Kühe. Stärkere Höfe.', impTitle2:'Sauberere Lebensmittel.',
+    impEyebrow:'Das Potenzial',
+    impTitle1:'Was die Forschung zeigt —', impTitle2:'und woran wir uns messen lassen.',
+    impSub:'Diese Zahlen stammen aus Studien und Branchendaten zur kamerabasierten Früherkennung. Sie sind das Ziel, das wir mit unseren Pilotbetrieben erreichen wollen — pro 100-Kuh-Betrieb.',
     imp1:'frühere Krankheitserkennung', imp2:'geringere Behandlungskosten', imp3:'höhere Milchleistung', imp3src:'pro Betrieb, pro Jahr',
     imp4:'weniger Antibiotika', imp4src:'EU-Daten', imp5:'gesparte Arbeit pro Jahr', imp5src:'Beobachtungszeit ersetzt',
     imp6:'Return on Investment', imp6src:'£12–20K Ersparnis pro Jahr',
-    sdg2:'Kein Hunger', sdg3:'Gesundheit', sdg12:'Nachhaltiger Konsum', sdg15:'Leben an Land',
-    faqTitle:'Häufige Fragen',
-    faq1q:'Brauche ich neue Kameras?', faq1a:'In den meisten Fällen nicht. CowCare arbeitet mit handelsüblichen IP-Kameras. Falls Sie noch keine haben, installieren wir sie — gebündelt und auf Wunsch über 2–3 Jahre finanziert.',
-    faq2q:'Wo werden meine Daten verarbeitet?', faq2a:'Direkt auf Ihrem Hof. Die KI läuft auf einem lokalen Edge-Gerät (NVIDIA Jetson). Rohvideos verlassen den Betrieb nie und werden nach 14–30 Tagen automatisch gelöscht — DSGVO-konform by design.',
-    faq3q:'Wie viel früher erkenne ich kranke Kühe?', faq3a:'Bis zu 48 Stunden, bevor Symptome mit bloßem Auge sichtbar werden. Die KI erkennt feine Verhaltensänderungen — kürzere Fresszeiten, längeres Liegen, veränderte Laufmuster — lange vor dem klinischen Ausbruch.',
-    faq4q:'Funktioniert CowCare auch auf der Weide?', faq4a:'Ja. Mit wetterfesten Außenkameras deckt CowCare auch Weideflächen ab — inklusive Erkennung von Eindringlingen wie Wölfen oder unbekannten Personen.',
-    faq5q:'Wie lange dauert die Einrichtung?', faq5a:'Typischerweise 1–2 Tage. Wir prüfen Ihre Kamera-Abdeckung, installieren das Edge-Gerät und richten die App ein. Danach lernt das System Ihre Herde innerhalb weniger Tage kennen.',
+    stoEyebrow:'Unsere Geschichte', stoTitle:'Aus einer Masterarbeit wurde eine Mission.',
+    sto1a:'CowCare beginnt an der ', sto1b:'University of Sussex', sto1c:': Dort entwickelte Praveenan Mathew in seiner Masterarbeit eine KI, die Kühe zuverlässig erkennt und verfolgt — allein mit Kameras, ohne einen einzigen Sensor am Tier.',
+    sto2a:'Gemeinsam mit ', sto2b:', einem KI- und Softwareentwicklungsunternehmen aus Deutschland, wurde aus der Forschungsarbeit ein echtes Produkt: ein System, das Landwirten die Augen erweitert, statt ihre Tiere zu verkabeln.',
+    sto3:'Dahinter steht eine einfache Überzeugung: Technologie soll der Landwirtschaft dienen — gesündere Tiere, weniger Antibiotika, weniger Verluste. Nicht Hightech um der Technik willen, sondern Technik im Dienst von Tier, Mensch und Umwelt.',
+    stoTag:'Eine Vision aus Sussex. Ein Engineering-Rückgrat aus Deutschland. Eine Mission für die Landwirtschaft.',
+    invEyebrow:'Für Investoren',
+    invTitle1:'Wir öffnen unsere', invTitle2:'Seed-Runde.',
+    invSub:'Kamerabasierte Herdengesundheit ist eine Kategorie, die gerade entsteht — und CowCare ist das einzige System, das ganz ohne Sensoren am Tier auskommt. Für die nächste Stufe holen wir Investoren an Bord: Verhaltens-KI trainieren, erste zahlende Höfe, Team ausbauen.',
+    mom1t:'Startup Sussex 2026 gewonnen', mom1d:'Durchgesetzt im universitätsweiten Wettbewerb — inklusive Preisgeld als Katalysator.',
+    mom2t:'Tracking entwickelt & validiert', mom2d:'Kern-Technologie auf realem Videomaterial verifiziert — bereit für den Feldeinsatz.',
+    mom3t:'Pilotprogramm läuft an', mom3d:'5 Pilotbetriebe in UK & Deutschland — die Basis für Trainingsdaten und Referenzen.',
+    mom4t:'Forschung University of Sussex', mom4d:'Wissenschaftliches Fundament plus Veterinär-Expertise im Team.',
+    mk1:'54.000 Milchviehbetriebe in UK & Deutschland', mk2:'$20 Mrd. KI in der Milchwirtschaft bis 2032', mk3:'15,4% CAGR im KI-Segment', mk4:'Kategorie-Beweis: CattleEye → 2023 von GEA übernommen',
+    bizT:'Das Geschäftsmodell nach dem Pilotprogramm',
+    bizD:'Jahresabo nach Herdengröße plus einmalige Einrichtung — Hardware gebündelt oder über 2–3 Jahre finanziert. Wiederkehrender Umsatz ab dem kommerziellen Start.',
+    mp1:'pro Jahr · bis 50 Kühe', mp2:'pro Jahr · ~100 Kühe', mp3:'pro Jahr · 300+ Kühe',
+    bizN1:'Pilotbetriebe erhalten dauerhaft Vorzugskonditionen.', bizN2:'Ein 100-Kuh-Betrieb spart laut Forschung £12–20K jährlich — ein 4–6× Return für den Landwirt.',
+    invBtn:'Gespräch anfragen', invOr:'— Zahlen, Deck und Details im persönlichen Gespräch.',
+    invMailSubject:'CowCare — Investorengespräch',
+    calT:'Oder direkt einen Termin buchen',
+    calSoonT:'Online-Terminbuchung folgt in Kürze', calSoonD:'Bis dahin erreichen Sie uns am schnellsten per E-Mail — wir antworten innerhalb eines Werktags.',
     teamTitle:'Ein globales Team aus Experten.',
     teamSub:'Engineering, KI, Veterinärmedizin und Wirtschaftsrecht — verteilt über Großbritannien, Deutschland und Kanada. Forschung an der University of Sussex.',
     m1:'Projekt- & KI-Leitung · Computer Vision', m2:'IT-Leitung · Strategie & Management', m3:'Software Engineer · Systemdesign',
     m4:'Head of Marketing · Go-to-Market', m5:'Projektmanager · Wirtschaftsjurist', m6:'Tierärztin · 10+ Jahre Praxis',
     germany:'Deutschland', canada:'Kanada',
-    ctaTitle:'Bereit, CowCare auf Ihrem Hof zu sehen?',
-    ctaSub:'Buchen Sie eine kostenlose 30-Minuten-Demo — wir zeigen Ihnen das System, prüfen Ihre Kameras und schätzen Ihre Einsparungen.',
-    ctaBtn:'Termin über Calendly wählen', ctaHint:'Oder schreiben Sie uns direkt — wir antworten innerhalb eines Werktags.',
-    formTitle:'Erzählen Sie uns von Ihrem Hof', formSub:'Wir melden uns mit einer individuellen Einschätzung.',
-    fName:'Name', fHerd:'Herdengröße', fHerd1:'Bis 50 Kühe', fHerd2:'50 – 150 Kühe', fHerd3:'150 – 300 Kühe', fHerd4:'300+ Kühe',
-    fMsg:'Nachricht', fMsgPh:'Erzählen Sie uns von Ihrem Hof, Ihren Kameras oder Ihrer Herausforderung…', fSend:'Anfrage senden',
-    footTag:'Gesündere Kühe. Smartere Höfe. Eine nachhaltigere Milchwirtschaft.',
+    faqTitle:'Häufige Fragen',
+    faq1q:'Was kostet mich das Pilotprogramm?', faq1a:'Nichts. Kameras, Edge-Gerät, Installation und Software gehen komplett auf unsere Kosten. Sie geben uns dafür Zugang zu Kamerabildern und gelegentliches Feedback — und sichern sich dauerhafte Vorzugskonditionen für die Zeit nach dem Pilot.',
+    faq2q:'Was passiert mit meinen Daten und Videos?', faq2a:'Die Analyse läuft lokal auf Ihrem Hof, auf einem Edge-Gerät. Rohvideos verlassen den Betrieb nicht und werden nach 14–30 Tagen automatisch gelöscht. Fürs KI-Training verwenden wir nur ausgewählte Ausschnitte — und nur mit Ihrem Einverständnis. DSGVO-konform.',
+    faq3q:'Brauche ich eigene Kameras?', faq3a:'Nein. Vorhandene IP-Kameras binden wir ein; fehlt etwas, installieren wir es im Pilotprogramm auf unsere Kosten. Im Bewerbungsformular können Sie einfach angeben, was schon da ist.',
+    faq4q:'Wie lange läuft das Pilotprogramm — und wie viel Aufwand habe ich?', faq4a:'Die Trainingsphase läuft über die Saison 2026/27. Ihr Aufwand ist minimal: Das System arbeitet im Hintergrund, Sie führen Ihren Betrieb wie immer. Ab und zu fragen wir nach Ihrer Einschätzung — Sie kennen Ihre Kühe schließlich am besten.',
+    faq5q:'Was kann die KI heute schon — und was noch nicht?', faq5a:'Ehrliche Antwort: Das Kuh-Tracking — jede Kuh erkennen und verfolgen — ist entwickelt und auf realem Videomaterial validiert. Die Verhaltenserkennung wird jetzt mit den Pilotbetrieben trainiert. Das Frühwarnsystem (bis zu 48 Stunden Vorsprung laut Forschung) ist das Ziel von Stufe 3.',
+    faq6q:'Wie kann ich in CowCare investieren?', faq6a:'Unsere Seed-Runde ist offen. Schreiben Sie uns über den Investoren-Bereich — wir teilen Zahlen, Deck und Details gern im persönlichen Gespräch.',
+    footTag:'Gesündere Kühe. Stärkere Höfe. Technik im Dienst von Tier, Mensch und Umwelt.',
     footPartner:'Eine Partnerschaft mit der WECONN3CT GmbH', footMade:'Mit 💚 für Landwirte in UK & Deutschland',
-    docTitle:'CowCare — KI, die jede Kuh sieht, jede Minute',
-    docDesc:'CowCare ist ein kamerabasiertes KI-System für Milchviehbetriebe. Es überwacht jede Kuh 24/7 — ohne Sensoren am Tier — und warnt bis zu 48 Stunden vor Krankheitsausbruch.'
+    docTitle:'CowCare — Die KI, die jede Kuh im Blick hat',
+    docDesc:'CowCare macht aus Stallkameras ein KI-Frühwarnsystem für Milchviehbetriebe — ohne Sensoren am Tier. Jetzt bewerben: 5 Pilotbetriebe in UK & Deutschland gesucht.'
   },
   en: {
-    navWhy:'Why', navSolution:'Solution', navHow:'How it works', navImpact:'Impact', navContact:'Contact', navCta:'Book a demo',
+    navWhy:'Why', navSolution:'Solution', navPlan:'The plan', navPilot:'Pilot programme', navInvestors:'Investors', navCta:'Become a pilot farm',
+    badgeWin:'Winner · Startup Sussex 2026',
     heroEyebrow:'Camera-based AI for dairy farms',
-    heroTitle1:'Every cow in view.', heroTitle2:'Every minute.', heroTitle3:'With zero', heroTitle4:'sensors.',
-    heroLead:'CowCare turns the cameras you already own into a herd-health AI — alerting you up to 48 hours before disease becomes visible.',
-    heroCta1:'Book a free farm demo', heroCta2:'See how it works',
-    detectLabel:'Cow #047 · identified',
-    chipAlertTitle:'Early alert sent', chipAlertSub:'Feeding time −22% · check cow #112',
-    stat1:'earlier disease detection', stat2:'return on investment', stat3:'sensors on the animal', stat4:'monitoring, every day',
+    heroTitle1:'The AI that watches', heroTitle2:'every cow.', heroTitle3:'Help us train it.',
+    heroLead:'Our cow tracking is built and validated on real footage — with zero sensors on the animal. Now we are taking CowCare onto real farms: we are looking for 5 pilot farms in the UK and Germany to train the behaviour-recognition AI with us. Free of charge.',
+    heroCta1:'Become a pilot farm', heroCta2:'For investors',
+    detectLabel:'Cow #047 · detected & tracked',
+    chipTitle:'Training data captured', chipSub:'Behaviour pattern: feeding · 14:32',
+    hs1n:'Stage 1 ✓', hs1l:'Cow tracking built & validated', hs2l:'pilot places in the UK & Germany', hs3l:'sensors on the animal', hs4l:'cost for pilot farms',
     probEyebrow:'The problem',
     probTitle1:'Disease is caught too late —', probTitle2:'and it costs.',
-    probSub:'By the time a sick cow shows visible symptoms, days of milk yield — and sometimes the animal itself — are already lost.',
+    probSub:'By the time a sick cow shows visible symptoms, days of milk yield — and sometimes the animal itself — are already lost. No farmer can watch every cow around the clock. That is exactly what we are changing.',
     probStat1:'of cows in UK herds are lame at any given time',
     probStat2:'lost to mastitis every single year in the UK',
     probStat3:'of silent milk-yield drop before disease becomes visible',
     probStat3Src:'Swedish clinical study', weeks:'weeks',
     solEyebrow:'Our solution',
-    solTitle1:'One watchful eye.', solTitle2:'Four capabilities.',
-    solSub:'CowCare runs on the IP cameras you already have. AI processes everything locally on the farm — no wearables, no cloud uploads, GDPR-compliant by design.',
-    p1t:'Cow tracking with ID', p1d:'Every cow gets a digital identity — recognised and tracked 24/7, purely by camera.',
-    p2t:'Behaviour recognition', p2d:'Eating, drinking, lying, walking — AI spots the subtle changes that signal illness early.',
-    p3t:'Real-time alerts', p3d:'Prioritised push notifications straight to your phone — act in minutes, not weeks.',
-    p4t:'Security detection', p4d:'Recognises intruders — wolves, unknown people, threats — and warns you immediately.',
+    solTitle1:'Four capabilities.', solTitle2:'And an honest status for each.',
+    solSub:'CowCare runs on ordinary IP cameras. The AI processes everything locally on the farm — no wearables, no cloud uploads, GDPR-compliant. And we say openly how far along each capability is today.',
+    tag1:'Built ✓', tag2:'In training — with you', tag3:'Beta', tag4:'Planned',
+    p1t:'Cow tracking with ID', p1d:'Every cow gets a digital identity — detected and tracked purely by camera. Validated on real footage, ready for the first farm.',
+    p2t:'Behaviour recognition', p2d:'Eating, drinking, lying, walking — the AI is learning to read the subtle changes that reveal illness early. This is exactly what we need pilot farms for.',
+    p3t:'Real-time alerts', p3d:'Prioritised push notifications straight to your phone — turning insight into action. In minutes, not weeks.',
+    p4t:'Security detection', p4d:'Recognises intruders — wolves, unknown people, threats — and raises the alarm immediately. Follows after behaviour recognition.',
     solTag1:'An extra pair of', solTag2:'eyes', solTag3:'for every farmer.',
-    howEyebrow:'How it works', howTitle:'From camera to alert in three steps.',
-    s1t:'Your existing cameras', s1d:'CowCare connects to standard IP cameras in the barn and on pasture — or we install them, bundled and financed.',
-    s2t:'AI on the farm, not in the cloud', s2d:'Video is processed locally on an NVIDIA Jetson edge device. Raw footage never leaves the farm and is deleted after 14–30 days.',
-    s3t:'Alerts to your pocket', s3d:"Behavioural anomalies become prioritised push alerts — up to 48 hours before you'd spot the disease yourself.",
+    planEyebrow:'The plan', planTitle:'Three stages to an early-warning system.',
+    planSub:'We are building CowCare step by step — and we are at the most important point right now: the leap from a validated model to real farms.',
+    st1t:'Cow tracking', st1d:'Detect, identify and track every cow — by camera alone. Born from research at the University of Sussex, refined and validated on real footage.', st1s:'Complete ✓',
+    st2t:'Train the behaviour AI', st2d:'On 5 pilot farms, the AI learns to read real cow behaviour — feeding, lying, walking, anomalies. This is where you come in: your herd makes the model smart.', st2s:'Now — you can join',
+    st3t:'Early warning & launch', st3d:'Alerts up to 48 hours before symptoms become visible, then the commercial launch: 20 paying farms within 24 months and expansion into the EU.', st3s:'Up next',
+    pilEyebrow:'Pilot programme', pilSlots:'5 places · applications open',
+    pilTitle:'Become one of 5 pilot farms.',
+    pilSub:'Free for your farm — valuable for the whole dairy sector. As a pilot farm you help train the behaviour AI on real data, and you get to use CowCare before anyone else.',
+    d1t:'What you get',
+    d1a:'Installation fully at our cost — cameras & edge device included',
+    d1b:'A live tracking dashboard of your herd from day one',
+    d1c:'Behaviour alerts first, as soon as they go live',
+    d1d:'Permanent preferential pricing after the commercial launch',
+    d2t:'What we need',
+    d2a:'Access to camera footage from barn or pasture',
+    d2b:'Occasional feedback from practice — you know your cows best',
+    d2c:'A training phase across the 2026/27 season — with no burden on your daily work',
+    d3t:'How it works',
+    d3a1:'Apply', d3a2:'2 minutes, form below',
+    d3b1:'Farm check', d3b2:'a short call, a look at barns & cameras',
+    d3c1:'Installation', d3c2:'we set everything up, you watch',
+    d3d1:'Training runs', d3d2:'the AI learns from your herd while you see everything in the dashboard',
+    fTitle:'Apply as a pilot farm now', fSub:'No commitment — we will get back to you within two working days.',
+    fName:'Name', fCountry:'Country', fCountry1:'Germany', fCountry2:'United Kingdom', fCountry3:'Other country',
+    fHerd:'Herd size', fHerd1:'Up to 50 cows', fHerd2:'50 – 150 cows', fHerd3:'150 – 300 cows', fHerd4:'300+ cows',
+    fCams:'Cameras in place?', fCams1:'Yes, in the barn', fCams2:'Partially', fCams3:'None yet',
+    fMsg:'Message (optional)', fMsgPh:'Tell us a little about your farm…', fSend:'Send application',
+    fHint:'Your details are used only to get in touch — no newsletter, no sharing.',
+    howEyebrow:'The technology', howTitle:'From camera to alert in three steps.',
+    s1t:'Ordinary IP cameras', s1d:'CowCare works with standard cameras in the barn and on pasture — existing ones are integrated, missing ones we install.',
+    s2t:'AI on the farm, not in the cloud', s2d:'Video is analysed locally on an edge device (NVIDIA Jetson). Raw footage never leaves the farm and is deleted after 14–30 days — GDPR-compliant.',
+    s3t:'Insights to your pocket', s3d:'Movement and behaviour data become clear, actionable notes and alerts — right in the app.',
     zeroBadge:'Zero sensors, collars or ear tags on the animal',
-    impEyebrow:'Impact per 100-cow farm',
-    impTitle1:'Happier cows. Stronger farms.', impTitle2:'Cleaner food.',
+    impEyebrow:'The potential',
+    impTitle1:'What the research shows —', impTitle2:'and what we measure ourselves against.',
+    impSub:'These figures come from studies and industry data on camera-based early detection. They are the target we aim to reach with our pilot farms — per 100-cow farm.',
     imp1:'earlier disease detection', imp2:'lower treatment costs', imp3:'higher milk yield', imp3src:'per farm, per year',
     imp4:'fewer antibiotics', imp4src:'EU data', imp5:'labour saved per year', imp5src:'observation time replaced',
     imp6:'return on investment', imp6src:'£12–20K yearly savings',
-    sdg2:'Zero Hunger', sdg3:'Good Health', sdg12:'Responsible Consumption', sdg15:'Life on Land',
-    faqTitle:'Frequently asked questions',
-    faq1q:'Do I need new cameras?', faq1a:"In most cases, no. CowCare works with standard IP cameras. If you don't have any yet, we install them — bundled, and financed over 2–3 years if you prefer.",
-    faq2q:'Where is my data processed?', faq2a:'Right on your farm. The AI runs on a local edge device (NVIDIA Jetson). Raw video never leaves the farm and is deleted automatically after 14–30 days — GDPR-compliant by design.',
-    faq3q:'How much earlier do I spot sick cows?', faq3a:'Up to 48 hours before symptoms are visible to the naked eye. The AI detects subtle behavioural shifts — shorter feeding, longer lying, altered gait — long before clinical onset.',
-    faq4q:'Does CowCare work on pasture too?', faq4a:'Yes. With weatherproof outdoor cameras, CowCare covers pasture as well — including detection of intruders such as wolves or unknown people.',
-    faq5q:'How long does setup take?', faq5a:'Typically 1–2 days. We review your camera coverage, install the edge device and set up the app. The system then learns your herd within a few days.',
+    stoEyebrow:'Our story', stoTitle:'From a master’s thesis to a mission.',
+    sto1a:'CowCare began at the ', sto1b:'University of Sussex', sto1c:', where Praveenan Mathew built an AI for his master’s thesis that reliably detects and tracks cows — using nothing but cameras, without a single sensor on the animal.',
+    sto2a:'Together with ', sto2b:', an AI and software engineering company from Germany, that research grew into a real product: a system that extends a farmer’s eyes instead of wiring up their animals.',
+    sto3:'Behind it stands a simple conviction: technology should serve agriculture — healthier animals, fewer antibiotics, fewer losses. Not high-tech for its own sake, but technology in the service of animals, people and the environment.',
+    stoTag:'A vision from Sussex. An engineering backbone from Germany. A mission for agriculture.',
+    invEyebrow:'For investors',
+    invTitle1:'We are opening our', invTitle2:'seed round.',
+    invSub:'Camera-based herd health is a category being born right now — and CowCare is the only system that needs zero sensors on the animal. For the next stage we are bringing investors on board: training the behaviour AI, first paying farms, growing the team.',
+    mom1t:'Won Startup Sussex 2026', mom1d:'Winner of the university-wide competition — prize money as a catalyst.',
+    mom2t:'Tracking built & validated', mom2d:'Core technology verified on real footage — ready for field deployment.',
+    mom3t:'Pilot programme launching', mom3d:'5 pilot farms across the UK & Germany — the foundation for training data and references.',
+    mom4t:'Research at the University of Sussex', mom4d:'A scientific foundation plus veterinary expertise on the team.',
+    mk1:'54,000 dairy farms in the UK & Germany', mk2:'$20B AI in dairy by 2032', mk3:'15.4% CAGR in the AI segment', mk4:'Category proof: CattleEye acquired by GEA in 2023',
+    bizT:'The business model after the pilot programme',
+    bizD:'Annual subscription by herd size plus a one-off setup — hardware bundled or financed over 2–3 years. Recurring revenue from the commercial launch.',
+    mp1:'per year · up to 50 cows', mp2:'per year · ~100 cows', mp3:'per year · 300+ cows',
+    bizN1:'Pilot farms keep preferential pricing permanently.', bizN2:'Research suggests a 100-cow farm saves £12–20K a year — a 4–6× return for the farmer.',
+    invBtn:'Request a conversation', invOr:'— numbers, deck and details in person.',
+    invMailSubject:'CowCare — Investor conversation',
+    calT:'Or book a slot directly',
+    calSoonT:'Online booking coming soon', calSoonD:'Until then, email is the fastest way to reach us — we reply within one business day.',
     teamTitle:'A global team of experts.',
     teamSub:'Engineering, AI, veterinary science and commercial law — across the UK, Germany and Canada. Research led at the University of Sussex.',
     m1:'Project & AI Leader · Computer vision', m2:'IT Leader · Strategy & management', m3:'Software Engineer · System design',
     m4:'Head of Marketing · Go-to-market', m5:'Project Manager · Commercial Lawyer', m6:'Veterinary Doctor · 10+ years practice',
     germany:'Germany', canada:'Canada',
-    ctaTitle:'Ready to see CowCare on your farm?',
-    ctaSub:"Book a free 30-minute demo — we'll walk you through the system, look at your camera setup and estimate your savings.",
-    ctaBtn:'Pick a time on Calendly', ctaHint:'Or write to us directly — we reply within one business day.',
-    formTitle:'Tell us about your farm', formSub:"We'll get back to you with a tailored estimate.",
-    fName:'Name', fHerd:'Herd size', fHerd1:'Up to 50 cows', fHerd2:'50 – 150 cows', fHerd3:'150 – 300 cows', fHerd4:'300+ cows',
-    fMsg:'Message', fMsgPh:"Tell us about your farm, your cameras, or what you'd like to solve…", fSend:'Send enquiry',
-    footTag:'Healthier cows. Smarter farms. A more sustainable dairy sector.',
+    faqTitle:'Frequently asked questions',
+    faq1q:'What does the pilot programme cost me?', faq1a:'Nothing. Cameras, edge device, installation and software are entirely on us. In return you give us access to camera footage and occasional feedback — and secure permanent preferential pricing for after the pilot.',
+    faq2q:'What happens to my data and videos?', faq2a:'Analysis runs locally on your farm, on an edge device. Raw video never leaves the farm and is deleted automatically after 14–30 days. For AI training we only use selected clips — and only with your consent. GDPR-compliant.',
+    faq3q:'Do I need my own cameras?', faq3a:'No. We integrate existing IP cameras; whatever is missing, we install at our cost during the pilot. Just tell us in the application form what is already in place.',
+    faq4q:'How long does the pilot run — and how much work is it for me?', faq4a:'The training phase runs across the 2026/27 season. Your effort is minimal: the system works in the background while you run your farm as usual. Now and then we will ask for your judgement — after all, you know your cows best.',
+    faq5q:'What can the AI do today — and what not yet?', faq5a:'Honest answer: cow tracking — detecting and following every cow — is built and validated on real footage. Behaviour recognition is being trained right now with the pilot farms. The early-warning system (up to 48 hours ahead, according to research) is the goal of stage 3.',
+    faq6q:'How can I invest in CowCare?', faq6a:'Our seed round is open. Reach out via the investor section — we are happy to share numbers, deck and details in a personal conversation.',
+    footTag:'Healthier cows. Stronger farms. Technology in the service of animals, people and the environment.',
     footPartner:'A partnership with WECONN3CT GmbH', footMade:'Made with 💚 for farmers in the UK & Germany',
-    docTitle:'CowCare — AI that watches every cow, every minute',
-    docDesc:'CowCare is a camera-based AI system for dairy farms. It monitors every cow 24/7 — no sensors, no wearables — and alerts farmers up to 48 hours before disease strikes.'
+    docTitle:'CowCare — The AI that watches every cow',
+    docDesc:'CowCare turns barn cameras into an AI early-warning system for dairy farms — zero sensors on the animal. Apply now: 5 pilot farms wanted in the UK & Germany.'
   }
 };
+
+function investorMailHref(lang) {
+  const t = I18N[lang] || I18N.de;
+  let addr = INVESTOR_EMAIL[lang];
+  if (!addr || addr === 'PLACEHOLDER') addr = INVESTOR_EMAIL.de; // Fallback, bis EN-Adresse eingerichtet ist
+  return 'mailto:' + addr + '?subject=' + encodeURIComponent(t.invMailSubject);
+}
 
 function setLang(lang) {
   const t = I18N[lang] || I18N.de;
@@ -814,11 +1190,13 @@ function setLang(lang) {
     const k = el.getAttribute('data-i18n-ph');
     if (t[k] != null) el.setAttribute('placeholder', t[k]);
   });
+  document.querySelectorAll('.js-investor-mail').forEach(a => { a.href = investorMailHref(lang); });
   document.getElementById('lang-de').classList.toggle('on', lang === 'de');
   document.getElementById('lang-en').classList.toggle('on', lang === 'en');
 }
 function chooseLang(lang) {
   setLang(lang);
+  renderCalendly(lang);
   try { localStorage.setItem('cowcare-lang', lang); } catch (e) {}
 }
 document.getElementById('lang-de').addEventListener('click', () => chooseLang('de'));
@@ -831,6 +1209,28 @@ if (!initial) {
   initial = langs.some(l => (l || '').toLowerCase().startsWith('de')) ? 'de' : 'en';
 }
 setLang(initial);
+
+/* ===== Calendly (Platzhalter-fähig) ===== */
+function renderCalendly(lang) {
+  const t = I18N[lang] || I18N.de;
+  const slot = document.getElementById('calendly-slot');
+  if (!slot) return;
+  if (!CALENDLY_URL || CALENDLY_URL === 'PLACEHOLDER') {
+    slot.innerHTML = '<div class="cal-soon">' +
+      '<span class="cal-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>' +
+      '<b>' + t.calSoonT + '</b><span>' + t.calSoonD + '</span></div>';
+    return;
+  }
+  if (!slot.dataset.loaded) {
+    slot.innerHTML = '<div class="calendly-inline-widget" data-url="' + CALENDLY_URL + '" style="min-width:280px;height:640px"></div>';
+    const s = document.createElement('script');
+    s.src = 'https://assets.calendly.com/assets/external/widget.js';
+    s.async = true;
+    document.body.appendChild(s);
+    slot.dataset.loaded = '1';
+  }
+}
+renderCalendly(initial);
 
 /* ===== FAQ accordion ===== */
 document.querySelectorAll('.faq-item').forEach(item => {
