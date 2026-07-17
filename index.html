@@ -129,12 +129,12 @@ nav .btn{padding:11px 22px;font-size:14px}
   color:#D8EDB4;background:rgba(140,198,63,.14);border-color:rgba(140,198,63,.4);
   backdrop-filter:blur(8px);font-size:12.5px;padding:8px 18px;margin-bottom:22px;margin-left:12px;
 }
-.hero h1{font-size:clamp(36px,5.2vw,66px);font-weight:800;line-height:1.08;letter-spacing:-.025em;color:#fff;text-wrap:balance}
+.hero h1{font-size:clamp(54px,8vw,100px);font-weight:800;line-height:1;letter-spacing:-.03em;color:#fff}
 .hero h1 .grass{color:var(--lime)}
 .hero h1 .h1-sub{
-  display:inline-block;margin-top:14px;
-  font-size:.44em;font-weight:600;line-height:1.35;letter-spacing:-.01em;
-  color:rgba(255,255,255,.88);
+  display:inline-block;margin-top:18px;max-width:640px;
+  font-size:clamp(18px,2.2vw,25px);font-weight:600;line-height:1.42;letter-spacing:-.01em;
+  color:rgba(255,255,255,.93);text-wrap:pretty;
 }
 .hero p.lead{margin:26px 0 0;font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.9);max-width:620px;text-wrap:pretty}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:36px}
@@ -547,10 +547,10 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
         <span class="badge-win">🏆 <span data-i18n="badgeWin">Gewinner Startup Sussex 2026</span></span><span class="eyebrow" data-i18n="heroEyebrow">Kamerabasierte KI für Milchviehbetriebe</span>
       </div>
       <h1>
-        <span data-i18n="heroTitle1">Computer Vision für die</span> <span class="grass" data-i18n="heroTitle2">Herdengesundheit.</span><br>
-        <span class="h1-sub" data-i18n="heroTitle3">Entstanden aus Forschung an der University of Sussex.</span>
+        Cow<span class="grass">Care</span><br>
+        <span class="h1-sub" data-i18n="heroSub">Künstliche Intelligenz, die jede Kuh rund um die Uhr per Kamera beobachtet — und Krankheiten erkennt, bevor man sie sieht. Ohne Sensoren am Tier.</span>
       </h1>
-      <p class="lead" data-i18n="heroLead">Unser Kuh-Tracking ist entwickelt und auf realem Videomaterial validiert — ganz ohne Sensoren am Tier. Jetzt bringen wir CowCare auf echte Höfe: Wir suchen 5 Pilotbetriebe in Großbritannien und Deutschland, die mit uns die Verhaltenserkennung trainieren. Kostenlos.</p>
+      <p class="lead" data-i18n="heroLead">Entstanden aus Forschung an der University of Sussex. Jetzt suchen wir 5 Pilotbetriebe in Großbritannien und Deutschland, die mit uns die nächste Stufe trainieren — kostenlos.</p>
       <div class="hero-ctas">
         <a class="btn btn-accent" href="#pilot"><span data-i18n="heroCta1">Pilotbetrieb werden</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="btn btn-glass" href="#investors" data-i18n="heroCta2">Für Investoren</a>
@@ -565,8 +565,44 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
     </div>
   </div>
 
-  <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C 240 100, 420 10, 720 40 C 1020 70, 1200 20, 1440 50 L 1440 90 L 0 90 Z" fill="#1C401D"/></svg>
+  <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C 240 100, 420 10, 720 40 C 1020 70, 1200 20, 1440 50 L 1440 90 L 0 90 Z" fill="#F7FAF2"/></svg>
 </header>
+
+<!-- ===== WHAT IS COWCARE ===== -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="how">
+      <div class="how-grid">
+        <div>
+          <span class="eyebrow rv" data-i18n="howEyebrow">Was ist CowCare?</span>
+          <h2 class="rv" style="transition-delay:.08s" data-i18n="howTitle">Ihre Kameras beobachten. Unsere KI versteht. Sie werden gewarnt.</h2>
+          <p class="sub rv" style="transition-delay:.12s" data-i18n="howSub">CowCare ist ein KI-System für Milchviehbetriebe: Es verbindet sich mit gewöhnlichen Stallkameras, erkennt jede einzelne Kuh und lernt ihr Verhalten kennen — damit Auffälligkeiten auffallen, lange bevor sie zum Problem werden.</p>
+          <div class="steps">
+            <div class="step rv" style="transition-delay:.1s">
+              <div class="n">1</div>
+              <div><h3 data-i18n="s1t">Gewöhnliche IP-Kameras</h3><p data-i18n="s1d">CowCare arbeitet mit Standard-Kameras in Stall und Weide — vorhandene werden eingebunden, fehlende installieren wir.</p></div>
+            </div>
+            <div class="step rv" style="transition-delay:.2s">
+              <div class="n">2</div>
+              <div><h3 data-i18n="s2t">KI auf dem Hof, nicht in der Cloud</h3><p data-i18n="s2d">Die Videoanalyse läuft lokal auf einem Edge-Gerät (NVIDIA Jetson). Rohmaterial verlässt nie den Hof und wird nach 14–30 Tagen gelöscht — DSGVO-konform.</p></div>
+            </div>
+            <div class="step rv" style="transition-delay:.3s">
+              <div class="n">3</div>
+              <div><h3 data-i18n="s3t">Erkenntnisse aufs Handy</h3><p data-i18n="s3d">Aus Bewegungs- und Verhaltensdaten werden verständliche Hinweise und Warnungen — direkt in der App.</p></div>
+            </div>
+          </div>
+          <div class="zero-badge rv" style="transition-delay:.35s">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg>
+            <span data-i18n="zeroBadge">Null Sensoren, Halsbänder oder Ohrmarken am Tier</span>
+          </div>
+        </div>
+        <img class="how-img rv" style="transition-delay:.18s" src="assets/barn-camera.jpg" alt="IP-Kamera überwacht Milchkühe im Stall" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="margin-bottom:-2px"><path d="M0 60 C 240 100, 420 10, 720 40 C 1020 70, 1200 20, 1440 50 L 1440 90 L 0 90 Z" fill="#1C401D"/></svg>
 
 <!-- ===== PROBLEM ===== -->
 <section class="section darksec" id="problem">
@@ -741,39 +777,6 @@ footer{background:var(--deep);color:rgba(255,255,255,.7);padding:56px 0 40px;pos
         <button class="btn btn-accent" type="submit" style="width:100%;justify-content:center"><span data-i18n="fSend">Bewerbung senden</span></button>
         <p class="form-hint" data-i18n="fHint">Ihre Daten werden nur zur Kontaktaufnahme verwendet — kein Newsletter, keine Weitergabe.</p>
       </form>
-    </div>
-  </div>
-</section>
-
-<!-- ===== TECHNOLOGY ===== -->
-<section class="section" id="how" style="padding-top:0">
-  <div class="wrap">
-    <div class="how">
-      <div class="how-grid">
-        <div>
-          <span class="eyebrow rv" data-i18n="howEyebrow">Die Technologie</span>
-          <h2 class="rv" style="transition-delay:.08s" data-i18n="howTitle">Von der Kamera zur Warnung in drei Schritten.</h2>
-          <div class="steps">
-            <div class="step rv" style="transition-delay:.1s">
-              <div class="n">1</div>
-              <div><h3 data-i18n="s1t">Gewöhnliche IP-Kameras</h3><p data-i18n="s1d">CowCare arbeitet mit Standard-Kameras in Stall und Weide — vorhandene werden eingebunden, fehlende installieren wir.</p></div>
-            </div>
-            <div class="step rv" style="transition-delay:.2s">
-              <div class="n">2</div>
-              <div><h3 data-i18n="s2t">KI auf dem Hof, nicht in der Cloud</h3><p data-i18n="s2d">Die Videoanalyse läuft lokal auf einem Edge-Gerät (NVIDIA Jetson). Rohmaterial verlässt nie den Hof und wird nach 14–30 Tagen gelöscht — DSGVO-konform.</p></div>
-            </div>
-            <div class="step rv" style="transition-delay:.3s">
-              <div class="n">3</div>
-              <div><h3 data-i18n="s3t">Erkenntnisse aufs Handy</h3><p data-i18n="s3d">Aus Bewegungs- und Verhaltensdaten werden verständliche Hinweise und Warnungen — direkt in der App.</p></div>
-            </div>
-          </div>
-          <div class="zero-badge rv" style="transition-delay:.35s">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m5 12 5 5L20 7"/></svg>
-            <span data-i18n="zeroBadge">Null Sensoren, Halsbänder oder Ohrmarken am Tier</span>
-          </div>
-        </div>
-        <img class="how-img rv" style="transition-delay:.18s" src="assets/barn-camera.jpg" alt="IP-Kamera überwacht Milchkühe im Stall" loading="lazy">
-      </div>
     </div>
   </div>
 </section>
@@ -968,8 +971,8 @@ const I18N = {
     navWhy:'Warum', navSolution:'Lösung', navPlan:'Der Plan', navPilot:'Pilotprogramm', navInvestors:'Investoren', navCta:'Pilotbetrieb werden',
     badgeWin:'Gewinner Startup Sussex 2026',
     heroEyebrow:'Kamerabasierte KI für Milchviehbetriebe',
-    heroTitle1:'Computer Vision für die', heroTitle2:'Herdengesundheit.', heroTitle3:'Entstanden aus Forschung an der University of Sussex.',
-    heroLead:'Unser Kuh-Tracking ist entwickelt und auf realem Videomaterial validiert — ganz ohne Sensoren am Tier. Jetzt bringen wir CowCare auf echte Höfe: Wir suchen 5 Pilotbetriebe in Großbritannien und Deutschland, die mit uns die Verhaltenserkennung trainieren. Kostenlos.',
+    heroSub:'Künstliche Intelligenz, die jede Kuh rund um die Uhr per Kamera beobachtet — und Krankheiten erkennt, bevor man sie sieht. Ohne Sensoren am Tier.',
+    heroLead:'Entstanden aus Forschung an der University of Sussex. Jetzt suchen wir 5 Pilotbetriebe in Großbritannien und Deutschland, die mit uns die nächste Stufe trainieren — kostenlos.',
     heroCta1:'Pilotbetrieb werden', heroCta2:'Für Investoren',
     detectLabel:'Kuh #047 · erkannt & verfolgt',
     chipTitle:'Trainingsdaten erfasst', chipSub:'Verhaltensmuster: Fressen · 14:32',
@@ -1018,7 +1021,8 @@ const I18N = {
     fCams:'Kameras vorhanden?', fCams1:'Ja, im Stall', fCams2:'Teilweise', fCams3:'Noch keine',
     fMsg:'Nachricht (optional)', fMsgPh:'Erzählen Sie uns kurz von Ihrem Hof…', fSend:'Bewerbung senden',
     fHint:'Ihre Daten werden nur zur Kontaktaufnahme verwendet — kein Newsletter, keine Weitergabe.',
-    howEyebrow:'Die Technologie', howTitle:'Von der Kamera zur Warnung in drei Schritten.',
+    howEyebrow:'Was ist CowCare?', howTitle:'Ihre Kameras beobachten. Unsere KI versteht. Sie werden gewarnt.',
+    howSub:'CowCare ist ein KI-System für Milchviehbetriebe: Es verbindet sich mit gewöhnlichen Stallkameras, erkennt jede einzelne Kuh und lernt ihr Verhalten kennen — damit Auffälligkeiten auffallen, lange bevor sie zum Problem werden.',
     s1t:'Gewöhnliche IP-Kameras', s1d:'CowCare arbeitet mit Standard-Kameras in Stall und Weide — vorhandene werden eingebunden, fehlende installieren wir.',
     s2t:'KI auf dem Hof, nicht in der Cloud', s2d:'Die Videoanalyse läuft lokal auf einem Edge-Gerät (NVIDIA Jetson). Rohmaterial verlässt nie den Hof und wird nach 14–30 Tagen gelöscht — DSGVO-konform.',
     s3t:'Erkenntnisse aufs Handy', s3d:'Aus Bewegungs- und Verhaltensdaten werden verständliche Hinweise und Warnungen — direkt in der App.',
@@ -1071,8 +1075,8 @@ const I18N = {
     navWhy:'Why', navSolution:'Solution', navPlan:'The plan', navPilot:'Pilot programme', navInvestors:'Investors', navCta:'Become a pilot farm',
     badgeWin:'Winner · Startup Sussex 2026',
     heroEyebrow:'Camera-based AI for dairy farms',
-    heroTitle1:'Computer vision for', heroTitle2:'herd health.', heroTitle3:'Built on research at the University of Sussex.',
-    heroLead:'Our cow tracking is built and validated on real footage — with zero sensors on the animal. Now we are taking CowCare onto real farms: we are looking for 5 pilot farms in the UK and Germany to train the behaviour-recognition AI with us. Free of charge.',
+    heroSub:'Artificial intelligence that watches every cow around the clock through cameras — and spots disease before you can see it. With zero sensors on the animal.',
+    heroLead:'Born from research at the University of Sussex. We are now looking for 5 pilot farms in the UK and Germany to train the next stage with us — free of charge.',
     heroCta1:'Become a pilot farm', heroCta2:'For investors',
     detectLabel:'Cow #047 · detected & tracked',
     chipTitle:'Training data captured', chipSub:'Behaviour pattern: feeding · 14:32',
@@ -1121,7 +1125,8 @@ const I18N = {
     fCams:'Cameras in place?', fCams1:'Yes, in the barn', fCams2:'Partially', fCams3:'None yet',
     fMsg:'Message (optional)', fMsgPh:'Tell us a little about your farm…', fSend:'Send application',
     fHint:'Your details are used only to get in touch — no newsletter, no sharing.',
-    howEyebrow:'The technology', howTitle:'From camera to alert in three steps.',
+    howEyebrow:'What is CowCare?', howTitle:'Your cameras watch. Our AI understands. You get alerted.',
+    howSub:'CowCare is an AI system for dairy farms: it connects to ordinary barn cameras, recognises every single cow and learns her behaviour — so anomalies stand out long before they become a problem.',
     s1t:'Ordinary IP cameras', s1d:'CowCare works with standard cameras in the barn and on pasture — existing ones are integrated, missing ones we install.',
     s2t:'AI on the farm, not in the cloud', s2d:'Video is analysed locally on an edge device (NVIDIA Jetson). Raw footage never leaves the farm and is deleted after 14–30 days — GDPR-compliant.',
     s3t:'Insights to your pocket', s3d:'Movement and behaviour data become clear, actionable notes and alerts — right in the app.',
